@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⌨️</text></svg>">
+    <title>Как убрать лишнюю раскладку клавиатуры в Windows 11: полное руководство — Мисс Клава</title>
+    <meta name="description" content="Пошаговая инструкция по удалению ненужных языков ввода и раскладок клавиатуры в Windows 11. Настройка горячих клавиш и настройка панели языков.">
+    <link rel="canonical" href="https://miss-klava.vercel.app/articles/k/ka/kak-ubrat-raskladku-klaviatury-v-windows-11.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как убрать лишнюю раскладку клавиатуры в Windows 11: полное руководство">
+    <meta property="og:description" content="Пошаговая инструкция по удалению ненужных языков ввода и раскладок клавиатуры в Windows 11. Настройка горячих клавиш и настройка панели языков.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780485530">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">⌨️</span>
+                <span class="pb-logo-text">Мисс Клава</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podklyuchenie-i-nastrojka/" class="pb-dropdown-item">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/" class="pb-dropdown-item">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/" class="pb-dropdown-item">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/" class="pb-dropdown-item">🔣 Спецсимволы и знаки</a>
+<a href="/category/podsvetka-i-dizajn/" class="pb-dropdown-item">🌈 Подсветка и дизайн</a>
+<a href="/category/remont-i-ustranenie-neispravnostej/" class="pb-dropdown-item">🛠️ Ремонт и устранение неисправностей</a>
+<a href="/category/klaviatury-na-smartfonakh/" class="pb-dropdown-item">📱 Клавиатуры на смартфонах</a>
+<a href="/category/igrovye-nastrojki/" class="pb-dropdown-item">🎮 Игровые настройки</a>
+<a href="/category/virtualnaya-klaviatura/" class="pb-dropdown-item">💻 Виртуальная клавиатура</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧹 Уход и чистка</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как убрать лишнюю раскладку клавиатуры в Windows 11: полное руководство</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#базовая-настройка-через-параметры-системы">Базовая настройка через параметры системы</a></li><li><a href="#управление-горячими-клавишами-и-переключением">Управление горячими клавишами и переключением</a></li><li><a href="#удаление-раскладок-через-классическую-панель-управления">Удаление раскладок через классическую панель управления</a></li><li><a href="#особенности-работы-с-языковыми-пакетами">Особенности работы с языковыми пакетами</a></li><li><a href="#таблица-основных-сочетаний-клавиш-для-управления">Таблица основных сочетаний клавиш для управления</a></li><li><a href="#тонкая-настройка-раскладки-для-профессионалов">Тонкая настройка раскладки для профессионалов</a></li><li><a href="#решение-проблем-с-постоянным-появлением-лишнего-языка">Решение проблем с постоянным появлением лишнего языка</a></li><li><a href="#итоги-и-рекомендации-по-настройке">Итоги и рекомендации по настройке</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-nazyvaetsya-instrument-dukhovoj-s-klaviaturoj.html">Как называется духовой инструмент с клавиатурой: виды и особенности</a></li><li><a href="/drugoe/n/na/napishite-programmu-kotoraya-vvodit-s-klaviatury-10-chisel-i-vychislyaet-ikh-summu-i-proizvedenie-piton.html">Программа на Python: ввод 10 чисел и расчет суммы с произведением</a></li><li><a href="/drugoe/v/vv/vvesti-s-klaviatury-dva-chisla-opredelit-chto-bolshe-summa-kvadratov-ili-kvadrat-summy-etikh-chisel.html">Сравнение квадратов чисел: сумма квадратов vs квадрат суммы</a></li><li><a href="/drugoe/k/ka/kak-vvesti-spisok-chisel-v-python-s-klaviatury.html">Как ввести список чисел в Python с клавиатуры: 7 способов</a></li><li><a href="/drugoe/k/ka/kak-zapolnit-massiv-v-pitone-s-klaviatury.html">Как в Python ввести массив с клавиатуры: 5 способов для новичков</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как убрать раскладку клавиатуры в Windows 11</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#базовая-настройка-через-параметры-системы">Базовая настройка через параметры системы</a></li><li><a href="#управление-горячими-клавишами-и-переключением">Управление горячими клавишами и переключением</a></li><li><a href="#удаление-раскладок-через-классическую-панель-управления">Удаление раскладок через классическую панель управления</a></li><li><a href="#особенности-работы-с-языковыми-пакетами">Особенности работы с языковыми пакетами</a></li><li><a href="#таблица-основных-сочетаний-клавиш-для-управления">Таблица основных сочетаний клавиш для управления</a></li><li><a href="#тонкая-настройка-раскладки-для-профессионалов">Тонкая настройка раскладки для профессионалов</a></li><li><a href="#решение-проблем-с-постоянным-появлением-лишнего-языка">Решение проблем с постоянным появлением лишнего языка</a></li><li><a href="#итоги-и-рекомендации-по-настройке">Итоги и рекомендации по настройке</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие пользователи сталкиваются с ситуацией, когда в нижнем правом углу экрана появляется лишняя иконка языка, а при наборе текста случайно переключается на незнакомую раскладку. Это происходит из-за того, что в системе <strong>Windows 11</strong> по умолчанию или в результате установки программ остаются неиспользуемые языковые пакеты.</p>
+
+<p>Удаление лишних элементов интерфейса позволяет не только упростить работу с <strong>клавиатурой</strong>, но и ускорить процесс переключения между активными языками. Если вы используете только русский и английский язык, наличие немецкого, французского или старого варианта русской раскладки создает лишний шум и усложняет управление.</p>
+
+<p>В этой статье мы подробно разберем, как через стандартные настройки системы убрать ненужные раскладки. Также мы рассмотрим альтернативные методы, если стандартный интерфейс не дает ожидаемого результата, и как настроить горячие клавиши для удобного переключения.</p>
+
+<h2 id="базовая-настройка-через-параметры-системы">Базовая настройка через параметры системы</h2>
+
+<p>Самый прямой способ управления языками находится в стандартном меню <em>Параметры</em>. Именно здесь система хранит все установленные языковые пакеты и их настройки. Чтобы попасть в нужный раздел, перейдите в <code>Пуск → Параметры</code> (или нажмите сочетание клавиш <code>Win + I</code>) и выберите вкладку <code>Время и язык</code>.</p>
+
+<p>В открывшемся меню вам необходимо найти раздел <code>Язык и регион</code>. Здесь отображается список всех языков, которые в данный момент доступны для использования. Интерфейс Windows 11 стал более визуальным, поэтому найти нужный элемент проще, чем в предыдущих версиях операционной системы.</p>
+
+<p>Найдите в списке язык, который вы хотите удалить, и нажмите на три точки (<code>...</code>) справа от его названия. В выпавшем меню выберите пункт <code>Удалить</code>. Система запросит подтверждение, так как удаление языка может повлиять на работу некоторых приложений, использующих этот язык для отображения текста.</p>
+
+<p>Если кнопка <code>Удалить</code> не активна, это означает, что данный язык является основным языком интерфейса системы. В этом случае нужно сначала изменить основной язык на другой, а затем вернуться и удалить ненужный.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Удаление основного языка интерфейса приведет к тому, что все меню и системные сообщения будут переведены на оставшийся язык. Убедитесь, что вы помните, как переключаться обратно или знаете английский язык, если удалите русский.</blockquote>
+
+<h2 id="управление-горячими-клавишами-и-переключением">Управление горячими клавишами и переключением</h2>
+
+<p>Часто проблема не в наличии лишнего языка, а в неудобном механизме переключения. По умолчанию Windows использует сочетание <code>Alt + Shift</code> или <code>Win + Пробел</code>. Если вы случайно нажимаете эти комбинации, раскладка меняется без вашего ведома, что создает путаницу при наборе текста.</p>
+
+<p>Чтобы изменить логику переключения, зайдите в <code>Параметры → Время и язык → Ввод</code>. В нижней части страницы найдите ссылку <code>Дополнительные параметры клавиатуры</code>. Здесь вы можете изменить сочетание клавиш, используемое для переключения языка ввода.</p>
+
+<p>Нажмите на ссылку <code>Параметры языковой панели</code> в разделе «Переключение метода ввода». Откроется классическое окно свойств, где нужно перейти на вкладку <code>Переключение клавиатуры</code>. Нажмите кнопку <code>Сменить сочетание клавиш</code>.</p>
+
+<p>Здесь можно переназначить переключение на менее удобную комбинацию, чтобы избежать случайных нажатий, или вовсе отключить переключение для определенных языков, оставив только визуальное отображение. Изменение настроек горячих клавиш требует перезагрузки некоторых приложений для вступления в силу.</p>
+
+<div class="pb-poll" id="poll-3832a550"><div class="pb-poll-question">📊 Как вы переключаете языки?</div><div class="pb-poll-option" data-poll="3832a550" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Alt + Shift</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3832a550" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Win + Пробел</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3832a550" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нажимаю на иконку в трее</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3832a550" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не переключаю, использую один язык</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="удаление-раскладок-через-классическую-панель-управления">Удаление раскладок через классическую панель управления</h2>
+
+<p>Несмотря на современность Windows 11, многие настройки языков по-прежнему хранятся в классической <em>Панели управления</em>, которая не исчезла из системы. Этот метод часто оказывается более эффективным, если настройки в новом интерфейсе не сохраняются корректно.</p>
+
+<p>Нажмите <code>Win + R</code>, введите команду <code>control</code> и нажмите <code>Enter</code>. В открывшемся окне в правом верхнем углу измените просмотр на <code>Крупные значки</code>. Найдите и откройте раздел <code>Язык</code>.</p>
+
+<p>В левой колонке нажмите на <code>Дополнительные параметры</code>. Здесь вы увидите список активных языков ввода. Для каждого языка можно настроить индивидуальные параметры, включая язык меню и языка программы по умолчанию. Это важный шаг для тонкой настройки.</p>
+
+<p>Чтобы убрать раскладку, выберите нужный язык в списке и нажмите <code>Удалить</code>. Если кнопка неактивна, сначала измените язык интерфейса Windows на другой, используя кнопку <code>Изменить язык интерфейса</code> в том же окне. После этого удаление станет доступным.</p>
+
+<p>Иногда в списке появляются «фантомные» языки, которые не отображаются в стандартных параметрах, но присутствуют в реестре. В таких случаях помогает только чистка реестра или использование специальных утилит, но это требует высокой осторожности.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к удалению языка</h4><label class="check-item"><input type="checkbox"><span>Проверить, является ли язык основным</span></label><label class="check-item"><input type="checkbox"><span>Запомнить текущее сочетание клавиш</span></label><label class="check-item"><input type="checkbox"><span>Создать точку восстановления</span></label><label class="check-item"><input type="checkbox"><span>Открыть Панель управления</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="особенности-работы-с-языковыми-пакетами">Особенности работы с языковыми пакетами</h2>
+
+<p>Важно понимать разницу между языком интерфейса и языком ввода. Удаление <strong>языкового пакета</strong> (Language Pack) может повлиять на работу системных шрифтов, словарей проверки орфографии и функций распознавания речи. Если вы планируете удалить язык полностью, убедитесь, что он не нужен для специфических задач.</p>
+
+<p>В некоторых случаях пользователи сталкиваются с тем, что после удаления языка он появляется снова после обновления системы или перезагрузки. Это связано с тем, что <strong>Windows 11</strong> автоматически скачивает пакеты для языков, установленных в регионе вашего аккаунта Microsoft.</p>
+
+<p>Чтобы предотвратить автоматическую установку, зайдите в <code>Параметры → Время и язык → Язык и регион</code>. Отключите переключатель <code>Использовать язык интерфейса Windows, установленный на этом устройстве</code> в разделе «Предпочитаемые языки». Это остановит синхронизацию языковых настроек с облаком.</p>
+
+<p>Также проверьте настройки региона. Если ваш регион установлен, например, как США, система может предлагать английский язык как приоритетный. Изменение региона на другую страну может изменить список предлагаемых языков ввода по умолчанию.</p>
+
+<details class="pb-accordion"><summary>Что такое языковой пакет?</summary><div class="pb-accordion-body"><p>Языковой пакет включает в себя шрифты, словари, голосовые дикторы и файлы перевода интерфейса. Удаление пакета освобождает место на диске, но может лишить вас проверки орфографии для этого языка.</p></div></details>
+
+<h2 id="таблица-основных-сочетаний-клавиш-для-управления">Таблица основных сочетаний клавиш для управления</h2>
+
+<p>Для эффективной работы с раскладками полезно знать не только стандартные комбинации, но и скрытые возможности управления вводом. Ниже приведена таблица с основными действиями, которые помогут вам контролировать процесс переключения.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Сочетание клавиш</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Переключение языка</td>
+<td><code>Win + Пробел</code></td>
+<td>Вызывает меню выбора языка с предпросмотром текущего состояния</td>
+</tr>
+<tr>
+<td>Переключение раскладки</td>
+<td><code>Alt + Shift</code></td>
+<td>Стандартное быстрое переключение между языками без меню</td>
+</tr>
+<tr>
+<td>Открыть параметры ввода</td>
+<td><code>Win + I</code> → <code>Time & Language</code></td>
+<td>Быстрый доступ к настройкам языка через меню параметров</td>
+</tr>
+<tr>
+<td>Виртуальная клавиатура</td>
+<td><code>Win + Ctrl + O</code></td>
+<td>Включение экранный клавиатуры для проверки раскладки</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Использование этих комбинаций позволяет быстро диагностировать проблему, если вы не видите иконку переключения на панели задач. Иногда иконка просто скрыта, и использование горячих клавиш становится единственным способом проверить наличие лишних языков.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Некоторые игровые приложения перехватывают сочетание <code>Alt + Shift</code> или <code>Win + Пробел</code>, что может привести к непредсказуемому поведению игры или сбросу настроек. В таких случаях рекомендуется использовать виртуальную клавиатуру или изменить глобальную раскладку.</blockquote>
+
+<h2 id="тонкая-настройка-раскладки-для-профессионалов">Тонкая настройка раскладки для профессионалов</h2>
+
+<p>Для продвинутых пользователей, которые используют специфические клавиатуры или требуют нестандартной раскладки (например, Dvorak или Colemak), стандартные средства Windows могут быть недостаточно гибкими. В таких случаях рекомендуется использовать сторонние утилиты или редактирование реестра.</p>
+
+<p>Можно создать собственный профиль раскладки, используя <em>Microsoft Keyboard Layout Creator</em>. Эта утилита позволяет переназначить любые клавиши, добавить специфические символы и сохранить новую раскладку как отдельный модуль, который можно удалить при необходимости.</p>
+
+<p>При редактировании реестра путь <code>HKEY_CURRENT_USER\Keyboard Layout\Preload</code> содержит список всех активных раскладок. Удаление записи из этого раздела полностью убирает язык из системы, но требует точности, так как ошибка может привести к некорректной работе ввода.</p>
+
+<p>Также стоит обратить внимание на настройки <code>Панели задач</code>. Иногда иконка переключения языка просто скрыта в зоне уведомлений. Нажмите на стрелку вверх в трее и перетащите иконку «Язык» обратно на панель задач для быстрого доступа.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед редактированием реестра обязательно создайте точку восстановления системы. Это позволит вернуть настройки в исходное состояние, если что-то пойдет не так.</p></aside>
+
+<h2 id="решение-проблем-с-постоянным-появлением-лишнего-языка">Решение проблем с постоянным появлением лишнего языка</h2>
+
+<p>Если вы удалили язык, но он продолжает появляться после перезагрузки, проблема может быть в фоновых службах или синхронизации с облачным аккаунтом. Проверьте, не включена ли функция синхронизации настроек в <code>Параметры → Аккаунты → Синхронизация ваших настроек</code>.</p>
+
+<p>Отключение синхронизации остановит подгрузку языков из облака. Также проверьте, не установлено ли приложение, которое автоматически добавляет языки для перевода или проверки орфографии. Многие офисные пакеты и браузеры добавляют свои языковые модули без явного согласия пользователя.</p>
+
+<p>В некоторых случаях помогает полное удаление <strong>языкового пакета</strong> через PowerShell. Откройте терминал от имени администратора и введите команду <code>Get-WinUserLanguageList | Where-Object {$_.LanguageTag -eq "en-US"} | Remove-WinUserLanguageList</code>. Это принудительно удалит английский язык, если он мешает работе.</p>
+
+<p>После выполнения команды обязательно перезагрузите компьютер, чтобы изменения вступили в силу. Если проблема сохраняется, проверьте список установленных программ и удалите подозрительные утилиты, связанные с переводом текста.</p>
+
+<h2 id="итоги-и-рекомендации-по-настройке">Итоги и рекомендации по настройке</h2>
+
+<p>Удаление лишних раскладок клавиатуры в <strong>Windows 11</strong> — это несложная процедура, которая значительно улучшает пользовательский опыт. Главное — действовать последовательно и проверять настройки в разных местах системы, включая классическую панель управления и параметры.</p>
+
+<p>Не забывайте о том, что современные операционные системы склонны к автоматическому обновлению и добавлению функций, поэтому периодическая проверка списка языков становится частью технического обслуживания. Регулярный аудит настроек ввода поможет избежать внезапных сбоев в работе.</p>
+
+<p>Если вы используете несколько устройств, настройте единый профиль языков через аккаунт Microsoft, но отключите автоматическую синхронизацию, если она создает проблемы. Это даст вам контроль над тем, какие языки установлены на конкретном компьютере.</p>
+
+<p>Помните, что <mark>удаление основного языка интерфейса может потребовать переустановки Windows, если вы не сможете восстановить доступ к системе.</mark> Всегда проверяйте, какой язык вы выбираете в качестве основного, прежде чем удалять другие варианты.</p>
+
+<details>
+<summary>Что делать, если кнопка «Удалить» неактивна?</summary>
+<p>Если кнопка удаления языка неактивна, значит, этот язык установлен как язык интерфейса системы. Вам нужно сначала изменить язык интерфейса на другой, а затем вернуться и удалить ненужный язык.</p>
+</details>
+
+<details>
+<summary>Можно ли удалить английский язык полностью?</summary>
+<p>Да, вы можете удалить английский язык, но убедитесь, что у вас есть другой язык ввода. Некоторые системные приложения могут требовать наличие английского языка для корректной работы.</p>
+</details>
+
+<details>
+<summary>Как вернуть удаленный язык?</summary>
+<p>Чтобы вернуть удаленный язык, зайдите в <code>Параметры → Время и язык → Язык и регион</code> и нажмите кнопку <code>Добавить язык</code>. Найдите нужный язык в списке и установите его.</p>
+</details>
+
+<details>
+<summary>Почему язык переключается сам по себе?</summary>
+<p>Это может быть связано с нажатием горячих клавиш, программными конфликтами или ошибками в драйверах клавиатуры. Проверьте настройки сочетаний клавиш и обновите драйверы устройства.</p>
+</details>
+
+<details>
+<summary>Влияет ли удаление языка на сохраненные файлы?</summary>
+<p>Нет, удаление языкового пакета не влияет на ваши личные файлы. Однако текстовые документы, созданные с использованием удаленного языка, могут отображаться некорректно, если система не сможет найти нужные шрифты.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-nazyvaetsya-instrument-dukhovoj-s-klaviaturoj.html" class="pb-related-card">
+                <span class="pb-related-title">Как называется духовой инструмент с клавиатурой: виды и особенности</span>
+                <span class="pb-related-desc">Узнайте, как называется духовой инструмент с клавиатурой. Обзор клавишных духовых, саксофонов, гобое</span>
+            </a><a href="/drugoe/n/na/napishite-programmu-kotoraya-vvodit-s-klaviatury-10-chisel-i-vychislyaet-ikh-summu-i-proizvedenie-piton.html" class="pb-related-card">
+                <span class="pb-related-title">Программа на Python: ввод 10 чисел и расчет суммы с произведением</span>
+                <span class="pb-related-desc">Пошаговое руководство: как написать скрипт на Python для ввода 10 чисел, вычисления их суммы и произ</span>
+            </a><a href="/drugoe/v/vv/vvesti-s-klaviatury-dva-chisla-opredelit-chto-bolshe-summa-kvadratov-ili-kvadrat-summy-etikh-chisel.html" class="pb-related-card">
+                <span class="pb-related-title">Сравнение квадратов чисел: сумма квадратов vs квадрат суммы</span>
+                <span class="pb-related-desc">Как ввести два числа с клавиатуры и определить, что больше: сумма их квадратов или квадрат суммы. По</span>
+            </a><a href="/drugoe/k/ka/kak-vvesti-spisok-chisel-v-python-s-klaviatury.html" class="pb-related-card">
+                <span class="pb-related-title">Как ввести список чисел в Python с клавиатуры: 7 способов</span>
+                <span class="pb-related-desc">Пошаговая инструкция для новичков: как в Python вводить списки чисел через input(), map(), list comp</span>
+            </a><a href="/drugoe/k/ka/kak-zapolnit-massiv-v-pitone-s-klaviatury.html" class="pb-related-card">
+                <span class="pb-related-title">Как в Python ввести массив с клавиатуры: 5 способов для новичков</span>
+                <span class="pb-related-desc">Пошаговое руководство по заполнению массивов в Python через input(): от простых списков до многомерн</span>
+            </a><a href="/articles/k/ka/kak-smenit-raskladku-fizicheskoj-klaviatury-android.html" class="pb-related-card">
+                <span class="pb-related-title">Как сменить раскладку физической клавиатуры на Android: полное руководство</span>
+                <span class="pb-related-desc">Пошаговая инструкция по подключению и настройке внешней клавиатуры на Android. Решение проблем с пер</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">⌨️ Мисс Клава</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a> · <a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a> · <a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a> · <a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a> · <a href="/category/podsvetka-i-dizajn/">🌈 Подсветка и дизайн</a> · <a href="/category/remont-i-ustranenie-neispravnostej/">🛠️ Ремонт и устранение неисправностей</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мисс Клава. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

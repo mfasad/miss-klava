@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⌨️</text></svg>">
+    <title>Как сменить раскладку физической клавиатуры на Android: полное руководство — Мисс Клава</title>
+    <meta name="description" content="Пошаговая инструкция по подключению и настройке внешней клавиатуры на Android. Решение проблем с переключением языков, пробелом и сочетаниями клавиш.">
+    <link rel="canonical" href="https://miss-klava.vercel.app/articles/k/ka/kak-smenit-raskladku-fizicheskoj-klaviatury-android.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сменить раскладку физической клавиатуры на Android: полное руководство">
+    <meta property="og:description" content="Пошаговая инструкция по подключению и настройке внешней клавиатуры на Android. Решение проблем с переключением языков, пробелом и сочетаниями клавиш.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780485530">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">⌨️</span>
+                <span class="pb-logo-text">Мисс Клава</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podklyuchenie-i-nastrojka/" class="pb-dropdown-item">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/" class="pb-dropdown-item">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/" class="pb-dropdown-item">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/" class="pb-dropdown-item">🔣 Спецсимволы и знаки</a>
+<a href="/category/podsvetka-i-dizajn/" class="pb-dropdown-item">🌈 Подсветка и дизайн</a>
+<a href="/category/remont-i-ustranenie-neispravnostej/" class="pb-dropdown-item">🛠️ Ремонт и устранение неисправностей</a>
+<a href="/category/klaviatury-na-smartfonakh/" class="pb-dropdown-item">📱 Клавиатуры на смартфонах</a>
+<a href="/category/igrovye-nastrojki/" class="pb-dropdown-item">🎮 Игровые настройки</a>
+<a href="/category/virtualnaya-klaviatura/" class="pb-dropdown-item">💻 Виртуальная клавиатура</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧹 Уход и чистка</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сменить раскладку физической клавиатуры на Android: полное руководство</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-особенности-работы-с-внешними-устройствами">Введение: особенности работы с внешними устройствами</a></li><li><a href="#базовая-настройка-через-стандартные-меню-системы">Базовая настройка через стандартные меню системы</a></li><li><a href="#сочетания-клавиш-для-быстрого-переключения">Сочетания клавиш для быстрого переключения</a></li><li><a href="#использование-сторонних-приложений-для-маппинга-клавиш">Использование сторонних приложений для маппинга клавиш</a></li><li><a href="#таблица-популярных-сочетаний-клавиш-для-разных-версий-android">Таблица популярных сочетаний клавиш для разных версий Android</a></li><li><a href="#решение-проблем-с-пробелом-и-спецсимволами">Решение проблем с пробелом и спецсимволами</a></li><li><a href="#особенности-подключения-через-otg-и-проводные-устройства">Особенности подключения через OTG и проводные устройства</a></li><li><a href="#анализ-причин-сбоев-и-рекомендации-по-оптимизации">Анализ причин сбоев и рекомендации по оптимизации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-nazyvaetsya-noutbuk-u-kotorogo-snimaetsya-klaviatura.html">Ноутбуки со съёмной клавиатурой: как называются и зачем нужны</a></li><li><a href="/drugoe/p/po/polnaya-klaviatura-skolko-klavish.html">Полная клавиатура сколько клавиш: стандарты и варианты</a></li><li><a href="/drugoe/k/ka/kak-vvesti-list-v-python-s-klaviatury.html">Как ввести список в Python с клавиатуры: 5 способов для новичков</a></li><li><a href="/drugoe/k/ka/kak-schitat-znachenie-s-klaviatury-v-python.html">Как считать значение с клавиатуры в Python: полная инструкция</a></li><li><a href="/drugoe/s/sk/skolko-klavish-na-klaviature-fortepiano.html">Сколько клавиш на фортепиано: стандарт 88 и редкие вариации</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как настроить и сменить раскладку физической клавиатуры на Android</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-особенности-работы-с-внешними-устройствами">Введение: особенности работы с внешними устройствами</a></li><li><a href="#базовая-настройка-через-стандартные-меню-системы">Базовая настройка через стандартные меню системы</a></li><li><a href="#сочетания-клавиш-для-быстрого-переключения">Сочетания клавиш для быстрого переключения</a></li><li><a href="#использование-сторонних-приложений-для-маппинга-клавиш">Использование сторонних приложений для маппинга клавиш</a></li><li><a href="#таблица-популярных-сочетаний-клавиш-для-разных-версий-android">Таблица популярных сочетаний клавиш для разных версий Android</a></li><li><a href="#решение-проблем-с-пробелом-и-спецсимволами">Решение проблем с пробелом и спецсимволами</a></li><li><a href="#особенности-подключения-через-otg-и-проводные-устройства">Особенности подключения через OTG и проводные устройства</a></li><li><a href="#анализ-причин-сбоев-и-рекомендации-по-оптимизации">Анализ причин сбоев и рекомендации по оптимизации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-особенности-работы-с-внешними-устройствами">Введение: особенности работы с внешними устройствами</h2>
+<p>Подключение <strong>физической клавиатуры</strong> к смартфону или планшету на базе <em>Android</em> часто превращается в головоломку для пользователя. Система распознает устройство как стандартное HID-ввод, но не всегда корректно подгружает нужную <strong>языковую раскладку</strong>. В отличие от встроенного экрана, где переключение происходит свайпом, с внешней периферией алгоритмы работы иные.</p>
+<p>Частой проблемой становится невозможность ввести кириллицу при подключенном <em>Bluetooth</em>-устройстве. Пользователь видит, что клавиатура светится и реагирует на нажатия, но на экране появляются только латинские символы. Это происходит из-за рассинхронизации между программным профилем <strong>клавиатуры</strong> в системе и физическим расположением клавиш на корпусе устройства.</p>
+<p>В данной статье мы разберем не только базовое переключение, но и методы принудительной смены <strong>раскладки</strong> через специальные приложения, если стандартные средства ОС не справляются. Вы узнаете, как настроить <code>Input Source</code> и избежать конфликтов в <code>Настройках</code>.</p>
+
+<h2 id="базовая-настройка-через-стандартные-меню-системы">Базовая настройка через стандартные меню системы</h2>
+<p>Первый шаг — убедиться, что устройство подключено и определено системой. Обычно достаточно зайти в <code>Настройки → Подключенные устройства</code> или <code>Bluetooth</code>. Если устройство отображается как «Подключено», система должна автоматически создать виртуальную карту клавиш. Однако, частоAndroid по умолчанию выбирает <strong>английский</strong> как основной язык ввода для новых HID-устройств.</p>
+<p>Для смены <strong>языка</strong> необходимо открыть <code>Настройки → Система → Язык и ввод</code>. В разделе «Экранная клавиатура» или «Физическая клавиатура» вы увидите список активных устройств. Выберите ваше название модели, например <em>Samsung Wireless Keyboard</em> или generic <em>USB Keyboard</em>. Здесь активируется опция «Список языков», где можно добавить нужный <strong>русский язык</strong>.</p>
+<p>Важно проверить настройки вкладки «Физическая клавиатура» в приложении «Gboard» или «Самсунг Клавиатура». Именно здесь происходит магия маппинга: вы указываете системе, что клавиша с буквой «А» на корпусе должна отображаться как русская «Ф» или английская «A» в зависимости от текущего контекста. Без этой привязки <strong>ввод текста</strong> будет некорректным.</p>
+
+<h2 id="сочетания-клавиш-для-быстрого-переключения">Сочетания клавиш для быстрого переключения</h2>
+<p>После настройки языков в меню, самый быстрый способ смены <strong>раскладки</strong> — использование горячих клавиш. На большинстве устройств Android стандартным сочетанием для переключения языка является <code>Ctrl + Пробел</code> или <code>Alt + Shift</code>. Это поведение наследуется от десктопных ОС, что удобно для опытных пользователей.</p>
+<p>Если стандартные комбинации не работают, попробуйте <code>Ctrl + Shift</code> или <code>Win (клавиша с флажком) + Пробел</code>. На некоторых <em>Logitech</em> или <em>Cherry</em> моделях функциональные клавиши (F1-F12) могут иметь встроенные макросы для смены языка, что нужно проверять в документации к устройству. Отсутствие реакции на нажатия часто означает, что <strong>система</strong> не видит второго языка в списке активного ввода.</p>
+<p>Иногда помогает нажатие клавиши <code>Menu</code> (обычно справа от <em>Пробел</em>) или <code>Fn + Пробел</code>. Если ни одно сочетание не срабатывает, проблема кроется в отсутствии <strong>профиля</strong> для конкретного устройства в памяти телефона. В этом случае требуется ручная привязка через сторонние утилиты.</p>
+
+<div class="pb-poll" id="poll-c25f8422"><div class="pb-poll-question">📊 Какая у вас операционная система на устройстве?</div><div class="pb-poll-option" data-poll="c25f8422" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Android 10-11</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c25f8422" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Android 12-13</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c25f8422" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Android 14+</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c25f8422" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другая/Кастомная прошивка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="использование-сторонних-приложений-для-маппинга-клавиш">Использование сторонних приложений для маппинга клавиш</h2>
+<p>Когда стандартные настройки Android отказываются сохранять <strong>раскладку</strong> для физической клавиатуры, на помощь приходят специализированные утилиты. Популярное решение — приложение «External Keyboard Helper» или «Hacker's Keyboard». Они создают виртуальный слой, перехватывающий сигналы от <strong>HID-устройства</strong> и транслирующий их в понятном для Android формате.</p>
+<p>Установив такое приложение, вы получаете доступ к детальному редактированию <code>Key Layout</code>. Можно назначить, например, чтобы при нажатии <code>Alt</code> + <code>К</code> вводился символ «Й», даже если на самой клавиатуре она расположена иначе. Это критично для пользователей старых <em>компьютерных</em> клавиатур, которые подключают к планшетам.</p>
+<p>В настройках таких приложений важно активировать опцию «Использовать как основную клавиатуру». Это перекроет стандартный ввод системы и позволит приложению полностью контролировать <strong>ввод символов</strong>. Без этого шага система будет игнорировать ваши настройки маппинга.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед использованием стороннего ПО</h4><label class="check-item"><input type="checkbox"><span>Установить приложение</span></label><label class="check-item"><input type="checkbox"><span>Назначить права администратора</span></label><label class="check-item"><input type="checkbox"><span>Выбрать в настройках ввода</span></label><label class="check-item"><input type="checkbox"><span>Перезагрузить устройство</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>
+<p>⚠️ Внимание: Использование сторонних клавиатур требует выдачи прав «Специальные возможности» (Accessibility). Это необходимо для перехвата системных событий ввода. Будьте осторожны при предоставлении таких прав неизвестным приложениям извне официального магазина Google Play.</p>
+</blockquote>
+
+<h2 id="таблица-популярных-сочетаний-клавиш-для-разных-версий-android">Таблица популярных сочетаний клавиш для разных версий Android</h2>
+<p>Разные версии операционной системы и производители прошивок (MIUI, OneUI, ColorOS) могут использовать разные стандарты по умолчанию. Ниже приведена сводная таблица наиболее вероятных комбинаций для смены <strong>раскладки</strong> и управления текстом.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Комбинация</th>
+<th>Действие</th>
+<th>Версия Android</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl + Пробел</code></td>
+<td>Переключение языка</td>
+<td>Все версии (стандарт)</td>
+</tr>
+<tr>
+<td><code>Alt + Shift</code></td>
+<td>Переключение языка (Windows style)</td>
+<td>Android 10+</td>
+</tr>
+<tr>
+<td><code>Ctrl + Alt + Пробел</code></td>
+<td>Доп. переключение раскладки</td>
+<td>Чистый Android</td>
+</tr>
+<tr>
+<td><code>Fn + Пробел</code></td>
+<td>Смена языка (зависит от клавиатуры)</td>
+<td>Блютуз-клавиатуры</td>
+</tr>
+<tr>
+<td><code>Win + Пробел</code></td>
+<td>Смена языка (на некоторых моделях)</td>
+<td>Гибридные устройства</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что на некоторых <em>китайских</em> планшетах стандартные комбинации могут быть заблокированы или переназначены. В таких случаях единственный рабочий метод — принудительная смена через приложение-посредник. <mark>Без установки дополнительного ПО смена раскладки на старых прошивках (Android 8 и ниже) может быть невозможна через стандартные настройки.</mark></p>
+
+<h2 id="решение-проблем-с-пробелом-и-спецсимволами">Решение проблем с пробелом и спецсимволами</h2>
+<p>Одной из самых частых проблем при подключении <strong>внешней клавиатуры</strong> является некорректная работа клавиши «Пробел». В некоторых случаях она вводит символы или просто ничего не делает. Это связано с тем, что Android ожидает специфический код сканирования (Scan Code), который может отличаться на разных <em>производителях</em>.</p>
+<p>Если пробел не работает, проверьте настройки <code>Настройки → Язык и ввод → Физическая клавиатура</code>. Попробуйте изменить режим ввода с «Совместимый» на «Стандартный» или наоборот. Иногда помогает отключение опции «Использовать автозамену», которая конфликтует с физическим вводом.</p>
+<p>Для ввода <strong>специальных символов</strong> (например, @, #, $) часто требуется комбинация с клавишей <code>Shift</code>. Если на физической клавиатуре символ находится в другом месте, чем на дисплее, используйте приложение для переназначения клавиш, описанное выше. Это позволит вам настроить ввод так, как вам удобно, независимо от <strong>физической разметки</strong> устройства.</p>
+
+<details class="pb-accordion"><summary>Как сбросить настройки клавиатуры до заводских?</summary><div class="pb-accordion-body"><p>Зайдите в Настройки → Приложения → Найдите Gboard (или вашу клавиатуру) → Память → Очистить данные. Это удалит все словари и настройки раскладок, но вернет работоспособность ввода.</p></div></details>
+
+<h2 id="особенности-подключения-через-otg-и-проводные-устройства">Особенности подключения через OTG и проводные устройства</h2>
+<p>При подключении проводной <strong>клавиатуры</strong> через USB-OTG переходник, система может потребовать разрешения на доступ к периферии. Это особенно актуально для <em>игровых</em> или механических клавиатур с подсветкой. Убедитесь, что переходник поддерживает питание, если клавиатура требует дополнительного тока.</p>
+<p>В отличие от Bluetooth, проводное подключение обычно не требует пары, но может вызвать конфликт, если в системе уже активна другая <strong>раскладка</strong> по умолчанию. Попробуйте отключить экранную клавиатуру полностью, оставив только физическую. Это уберет дублирование ввода и ускорит работу системы.</p>
+<p>Иногда для корректной работы необходимо обновить <code>драйверы</code> в режиме разработчика. Включите «Отладку по USB» в <code>Настройки → Для разработчиков</code> и подключите устройство к ПК для проверки работоспособности через <code>ADB</code>. Это продвинутый метод, но он позволяет проверить, видит ли ядро Android устройство корректно.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При использовании OTG-концентраторов с большим количеством устройств может возникать нехватка питания. Это приводит к тому, что клавиатура работает нестабильно или периодически отключается, сбрасывая <strong>раскладку</strong> на английский язык.</p>
+</blockquote>
+
+<h2 id="анализ-причин-сбоев-и-рекомендации-по-оптимизации">Анализ причин сбоев и рекомендации по оптимизации</h2>
+<p>Если смена <strong>раскладки</strong> работает нестабильно, проблема может быть в фоновых процессах. Некоторые приложения, особенно мессенджеры или браузеры, могут перехватывать фокус ввода и игнорировать системные переключения. Попробуйте перезапустить приложение или очистить кэш <strong>службы ввода</strong>.</p>
+<p>Также стоит проверить, не установлена ли у вас «кастомная» клавиатура, которая не поддерживает физические устройства. Стандартные приложения от Google или Samsung имеют лучшую совместимость с HID-протоколами. Удаление лишних клавиатур из списка <code>Язык и ввод</code> может ускорить работу системы.</p>
+<p>В редких случаях помогает сброс всех настроек языка и ввода. Это радикальная мера, но она гарантирует, что в системе не осталось конфликтов старых профилей. После сброса настройте <strong>раскладку</strong> заново, добавив только необходимые языки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед подключением физической клавиатуры всегда проверяйте, что в настройках Bluetooth отключено устройство «Автоподключение», если вы планируете использовать разные клавиатуры для разных задач.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Почему при подключении клавиатуры Android переключается на английский язык?</summary>
+<p>Это стандартное поведение системы. По умолчанию Android выбирает английский как основной язык для новых HID-устройств. Чтобы исправить это, нужно зайти в <code>Настройки → Язык и ввод</code> и добавить русский язык в список активных для физической клавиатуры.</p>
+</details>
+<details>
+<summary>Как переключить раскладку, если Ctrl+Пробел не работает?</summary>
+<p>Если стандартная комбинация не срабатывает, попробуйте <code>Alt + Shift</code>, <code>Ctrl + Alt + Пробел</code> или <code>Win + Пробел</code>. Также проверьте настройки приложения клавиатуры (например, Gboard), где можно назначить свои горячие клавиши.</p>
+</details>
+<details>
+<summary>Можно ли подключить проводную клавиатуру без OTG-переходника?</summary>
+<p>Нет, современные смартфоны не имеют полноразмерного USB-порта. Необходим переходник USB-C (или Micro-USB) на USB-A. Для работы с большими клавиатурами может потребоваться переходник с поддержкой питания.</p>
+</details>
+<details>
+<summary>Зачем нужно приложение External Keyboard Helper?</summary>
+<p>Оно необходимо, если стандартная система Android некорректно распознает раскладку вашей клавиатуры. Приложение позволяет вручную настроить маппинг каждой клавиши, что критично для старых или специфических моделей.</p>
+</details>
+<details>
+<summary>Можно ли использовать физическую клавиатуру в играх на Android?</summary>
+<p>Да, многие игры поддерживают ввод с клавиатуры (стрельба, движение). Однако, в онлайн-шутерах это может быть запрещено правилами. Проверьте настройки игры и правила сервера перед использованием.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-nazyvaetsya-noutbuk-u-kotorogo-snimaetsya-klaviatura.html" class="pb-related-card">
+                <span class="pb-related-title">Ноутбуки со съёмной клавиатурой: как называются и зачем нужны</span>
+                <span class="pb-related-desc">Узнайте, как называются ноутбуки с отсоединяемой клавиатурой, их виды (2-в-1, трансформеры), лучшие </span>
+            </a><a href="/drugoe/p/po/polnaya-klaviatura-skolko-klavish.html" class="pb-related-card">
+                <span class="pb-related-title">Полная клавиатура сколько клавиш: стандарты и варианты</span>
+                <span class="pb-related-desc">Сколько кнопок у полной клавиатуры? Разбор стандартов 104, 108, 101 и компактных версий. Таблица рас</span>
+            </a><a href="/drugoe/k/ka/kak-vvesti-list-v-python-s-klaviatury.html" class="pb-related-card">
+                <span class="pb-related-title">Как ввести список в Python с клавиатуры: 5 способов для новичков</span>
+                <span class="pb-related-desc">Пошаговая инструкция по вводу списков в Python через input(): от простых методов до обработки сложны</span>
+            </a><a href="/drugoe/k/ka/kak-schitat-znachenie-s-klaviatury-v-python.html" class="pb-related-card">
+                <span class="pb-related-title">Как считать значение с клавиатуры в Python: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как правильно считать ввод с клавиатуры в Python. Разбор функций input(), обработки типов д</span>
+            </a><a href="/drugoe/s/sk/skolko-klavish-na-klaviature-fortepiano.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько клавиш на фортепиано: стандарт 88 и редкие вариации</span>
+                <span class="pb-related-desc">Узнайте точное количество клавиш на классическом фортепиано. Разбор стандарта 88, 61, 76, 85 и 97 кл</span>
+            </a><a href="/drugoe/k/ka/kak-vvodit-elementy-massiva-s-klaviatury-v-si.html" class="pb-related-card">
+                <span class="pb-related-title">Ввод элементов массива с клавиатуры в C: пошаговое руководство</span>
+                <span class="pb-related-desc">Научитесь корректно вводить данные массива в языке C. Разбор функций scanf, обработка ошибок ввода и</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">⌨️ Мисс Клава</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a> · <a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a> · <a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a> · <a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a> · <a href="/category/podsvetka-i-dizajn/">🌈 Подсветка и дизайн</a> · <a href="/category/remont-i-ustranenie-neispravnostej/">🛠️ Ремонт и устранение неисправностей</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мисс Клава. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

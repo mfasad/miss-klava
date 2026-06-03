@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⌨️</text></svg>">
+    <title>Ошибка использования writeln: почему он не для ввода данных с клавиатуры — Мисс Клава</title>
+    <meta name="description" content="Разбор распространенной ошибки: оператор writeln предназначен для вывода, а не ввода. Узнайте, как правильно считывать данные и чем заменить writeln для ввода.">
+    <link rel="canonical" href="https://miss-klava.vercel.app/articles/d/dl/dlya-chego-prednaznachen-operator-writeln-dlya-vvoda-dannykh-s-klaviatury-dlya-vvoda-chislovykh-dannykh.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ошибка использования writeln: почему он не для ввода данных с клавиатуры">
+    <meta property="og:description" content="Разбор распространенной ошибки: оператор writeln предназначен для вывода, а не ввода. Узнайте, как правильно считывать данные и чем заменить writeln для ввода.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780485530">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">⌨️</span>
+                <span class="pb-logo-text">Мисс Клава</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podklyuchenie-i-nastrojka/" class="pb-dropdown-item">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/" class="pb-dropdown-item">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/" class="pb-dropdown-item">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/" class="pb-dropdown-item">🔣 Спецсимволы и знаки</a>
+<a href="/category/podsvetka-i-dizajn/" class="pb-dropdown-item">🌈 Подсветка и дизайн</a>
+<a href="/category/remont-i-ustranenie-neispravnostej/" class="pb-dropdown-item">🛠️ Ремонт и устранение неисправностей</a>
+<a href="/category/klaviatury-na-smartfonakh/" class="pb-dropdown-item">📱 Клавиатуры на смартфонах</a>
+<a href="/category/igrovye-nastrojki/" class="pb-dropdown-item">🎮 Игровые настройки</a>
+<a href="/category/virtualnaya-klaviatura/" class="pb-dropdown-item">💻 Виртуальная клавиатура</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧹 Уход и чистка</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ошибка использования writeln: почему он не для ввода данных с клавиатуры</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#фундаментальное-различие-между-выводом-и-вводом">Фундаментальное различие между выводом и вводом</a></li><li><a href="#правильные-операторы-для-ввода-данных-read-и-readln">Правильные операторы для ввода данных: Read и Readln</a></li><li><a href="#технические-нюансы-работы-с-буфером-ввода">Технические нюансы работы с буфером ввода</a></li><li><a href="#сравнительный-анализ-операторов-ввода-и-вывода">Сравнительный анализ операторов ввода и вывода</a></li><li><a href="#типичные-ошибки-и-способы-их-исправления">Типичные ошибки и способы их исправления</a></li><li><a href="#специфика-работы-с-числовыми-типами-данных">Специфика работы с числовыми типами данных</a></li><li><a href="#заключение">Заключение</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-nauchitsya-bystro-pechatat-na-klaviature-video.html">Как научиться быстро печатать: видеоуроки и тренажеры 2026</a></li><li><a href="/drugoe/k/kl/klaviatura-kak-na-noutbuke-dlya-pk-kupit.html">Клавиатура как на ноутбуке для ПК: как выбрать и купить идеальную модель</a></li><li><a href="/drugoe/s/sk/skolko-klikov-v-minutu-na-klaviature.html">Сколько кликов в минуту на клавиатуре: нормы и тесты скорости</a></li><li><a href="/drugoe/g/gd/gde-v-permi-kupit-nedoroguyu-klaviaturu.html">Где в Перми купить недорогую клавиатуру: гид по магазинам 2026</a></li><li><a href="/drugoe/c/ch/chto-oznachaet-vzveshennaya-i-nevzveshennaya-klaviatura-v-tsifrovom-pianino.html">Взвешенная и невзвешенная клавиатура в цифровом пианино: разница и выбор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Оператор writeln и ввод данных: разбор фундаментальной ошибки</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#фундаментальное-различие-между-выводом-и-вводом">Фундаментальное различие между выводом и вводом</a></li><li><a href="#правильные-операторы-для-ввода-данных-read-и-readln">Правильные операторы для ввода данных: Read и Readln</a></li><li><a href="#технические-нюансы-работы-с-буфером-ввода">Технические нюансы работы с буфером ввода</a></li><li><a href="#сравнительный-анализ-операторов-ввода-и-вывода">Сравнительный анализ операторов ввода и вывода</a></li><li><a href="#типичные-ошибки-и-способы-их-исправления">Типичные ошибки и способы их исправления</a></li><li><a href="#специфика-работы-с-числовыми-типами-данных">Специфика работы с числовыми типами данных</a></li><li><a href="#заключение">Заключение</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Многие начинающие программисты на языке Pascal сталкиваются с критическим заблуждением, полагая, что оператор <code>writeln</code> может служить инструментом для получения информации от пользователя. Это фундаментальное непонимание синтаксиса языка приводит к невозможности реализации интерактивных программ, где необходимо взаимодействие с <strong>клавиатурой</strong>. Важно сразу определить природу этого оператора, чтобы избежать ошибок в логике вашего кода.</p>
+
+<p>На самом деле, <code>writeln</code> предназначен исключительно для <strong>вывода</strong> данных на экран или в файл. Если вы попытаетесь использовать его для считывания числовых значений, введенных с <em>клавиатуры</em>, компилятор выдаст ошибку или программа просто не сможет выполнить поставленную задачу по обработке ввода. Для корректной работы с потоками ввода необходимо использовать специализированные команды, которые были разработаны разработчиками языка именно для этой цели.</p>
+
+<h2 id="фундаментальное-различие-между-выводом-и-вводом">Фундаментальное различие между выводом и вводом</h2>
+
+<p>В языке программирования Pascal существует строгое разделение потоков данных. С одной стороны, поток вывода направляет информацию от процессора к устройству отображения, а с другой — поток ввода передает данные от периферийных устройств, таких как клавиатура, в оперативную память компьютера. Оператор <code>writeln</code> относится исключительно к первой категории. Он берет переменные или константы и записывает их содержимое в выходной буфер с последующим переносом курсора на новую строку.</p>
+
+<p>Если вы напишете <code>writeln(x)</code>, где <code>x</code> — это переменная, программа просто покажет текущее значение <code>x</code> на экране. Она не будет ждать, пока вы нажмете клавиши, и не сохранит эти нажатия в переменную. Для задачи считывания данных с <strong>клавиатуры</strong> используется совершенно другой механизм, который активирует режим ожидания ввода от пользователя.</p>
+
+<p>Попытка использовать <em>writeln</em> для ввода ведет к логическому тупику. Программа будет выполнять только печать текста, игнорируя любые действия пользователя за клавиатурой. Чтобы создать диалоговое взаимодействие, необходимо понимать, что каждая команда имеет свое уникальное назначение и функционал в рамках стандартной библиотеки языка.</p>
+
+<h2 id="правильные-операторы-для-ввода-данных-read-и-readln">Правильные операторы для ввода данных: Read и Readln</h2>
+
+<p>Для считывания числовых данных с клавиатуры существуют два основных оператора: <code>read</code> и <code>readln</code>. Именно они обеспечивают передачу информации из внешнего мира внутрь программы. Оператор <code>read(a, b)</code> считывает значения в указанные переменные, но оставляет курсор в той же строке, что удобно для ввода нескольких параметров подряд без перехода на новую строку.</p>
+
+<p>Однако наиболее часто используется <code>readln</code>. Этот оператор не только считывает данные в переменные, но и перемещает указатель позиции ввода на следующую строку, очищая буфер ввода от остатков нажатых клавиш. Это критически важно при работе с циклами или последовательными запросами данных, чтобы значения предыдущего ввода не смешивались с последующими.</p>
+
+<pre><code>readln(x);
+<p>readln(a, b, c);</code></pre></p>
+
+<p>Когда вы вызываете <code>readln</code>, программа приостанавливает свое выполнение и ждет, пока пользователь введет данные с <strong>клавиатуры</strong> и нажмет клавишу Enter. После этого введенные символы преобразуются в числовой формат (если переменная числовая) и записываются в память по адресу переменной. Это кардинально отличается от бездумного вывода текста через <code>writeln</code>.</p>
+
+<blockquote>⚠️ Внимание: Никогда не пытайтесь записать данные в переменную с помощью <code>writeln</code>. Синтаксически это может быть допустимо как выражение, но семантически это бессмысленно для задачи ввода, так как поток данных направлен в обратную сторону.</blockquote>
+
+<div class="pb-poll" id="poll-e117e8b2"><div class="pb-poll-question">📊 Что вы думаете о путанице между read и writeln?</div><div class="pb-poll-option" data-poll="e117e8b2" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Это частая ошибка новичков/Это невозможно перепутать/Я всегда путал эти команды/Считаю, что синтаксис языка запутан</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="технические-нюансы-работы-с-буфером-ввода">Технические нюансы работы с буфером ввода</h2>
+
+<p>Работа с вводом данных имеет свои скрытые особенности, связанные с тем, как операционная система обрабатывает нажатия клавиш. Когда вы вводите число и нажимаете Enter, в буфер ввода попадают не только цифры, но и символ переноса строки. Оператор <code>read</code> может оставить этот символ в буфере, создавая проблемы для следующей операции ввода, особенно если вы планируете читать строку текста.</p>
+
+<p>Оператор <code>readln</code> решает эту проблему, потребляя символ переноса строки вместе с данными. Это делает его предпочтительным выбором для большинства сценариев, где требуется чистый ввод. Понимание этого механизма помогает избежать ошибок, когда программа "пропускает" шаг ввода или считывает пустое значение вместо ожидаемого числа.</p>
+
+<ul>
+<li>Используйте <strong>readln</strong> для ввода чисел и строк, когда важен полный сброс буфера.</li>
+<li>Применяйте <code>read</code> только тогда, когда требуется ввод нескольких значений в одной строке без переноса.</li>
+<li>Следите за типами данных: попытка ввести текст в переменную типа <em>integer</em> вызовет ошибку выполнения.</li>
+</ul>
+
+<h2 id="сравнительный-анализ-операторов-ввода-и-вывода">Сравнительный анализ операторов ввода и вывода</h2>
+
+<p>Для наглядности разберем различия в таблице, чтобы четко зафиксировать функциональные отличия. Понимание этих различий является базой для написания корректного программного кода. Ошибочное использование <code>writeln</code> для ввода часто приводит к тому, что переменные остаются неинициализированными или содержат мусор из памяти.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Оператор</th>
+<th>Направление потока</th>
+<th>Поведение с курсором</th>
+<th>Основное назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>writeln</code></td>
+<td>Процессор → Экран</td>
+<td>Перенос на новую строку</td>
+<td>Вывод результата</td>
+</tr>
+<tr>
+<td><code>write</code></td>
+<td>Процессор → Экран</td>
+<td>Остается на месте</td>
+<td>Вывод без переноса</td>
+</tr>
+<tr>
+<td><code>readln</code></td>
+<td>Клавиатура → Память</td>
+<td>Очищает буфер после ввода</td>
+<td>Ввод данных</td>
+</tr>
+<tr>
+<td><code>read</code></td>
+<td>Клавиатура → Память</td>
+<td>Оставляет символ переноса</td>
+<td>Ввод без очистки буфера</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, <code>writeln</code> — это односторонний канал информации, который не может "слышать" пользователя. Его задача — информировать, а не принимать. Попытка использовать его для ввода аналогична попытке говорить в телефон, ожидая, что трубка сама запишет ваши слова в базу данных. Это технически невозможно без использования правильного канала передачи данных.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка правильности ввода</h4><label class="check-item"><input type="checkbox"><span>Замените writeln на readln/Проверьте типы переменных/Убедитесь, что переменная объявлена/Проверьте наличие Enter после ввода</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="типичные-ошибки-и-способы-их-исправления">Типичные ошибки и способы их исправления</h2>
+
+<p>Одной из самых частых ошибок является написание кода, где программист ожидает, что после <code>writeln(x)</code> переменная <code>x</code> получит новое значение. В таком сценарии программа просто выведет старое значение (или мусор) и продолжит выполнение, не дожидаясь ввода. Это делает программу неинтерактивной и бесполезной для решения задач, требующих пользовательского ввода.</p>
+
+<p>Исправить это довольно просто: нужно заменить <code>writeln</code> на <code>readln</code> в месте, где ожидается ввод данных. Если же нужно вывести приглашение к вводу, используйте <code>writeln</code> отдельно, а затем сразу вызывайте <code>readln</code>. Такой подход обеспечивает четкое разделение этапов взаимодействия с пользователем.</p>
+
+<pre><code>// Правильный порядок действий
+<p>writeln('Введите число:');</p>
+<p>readln(x);</code></pre></p>
+
+<p>Также стоит помнить о проверке ввода. Если пользователь введет буквы вместо цифр в переменную целого типа, программа аварийно завершится. Использование процедур ввода требует внимательности к типу данных. <strong>Числовые</strong> переменные не могут хранить строковые значения без предварительного преобразования.</p>
+
+<blockquote>⚠️ Внимание: Ошибка ввода типа данных может вызвать исключение <em>Runtime Error 200</em>. Всегда проверяйте, что вводится пользователем, прежде чем обрабатывать его в программе.</blockquote>
+
+<details class="pb-accordion"><summary>Что происходит внутри при вызове readln?</summary><div class="pb-accordion-body"><p>При вызове readln программа активирует драйвер клавиатуры, ожидает нажатия Enter, считывает последовательность символов из буфера, преобразует ASCII-коды в внутреннее представление числа и записывает результат в адрес переменной, после чего сбрасывает буфер.</p></div></details>
+
+<h2 id="специфика-работы-с-числовыми-типами-данных">Специфика работы с числовыми типами данных</h2>
+
+<p>При вводе числовых данных с клавиатуры важно учитывать ограничения типов данных в языке Pascal. Оператор <code>readln</code> автоматически парсит введенную строку. Однако, если введено число, превышающее диапазон типа <code>integer</code>, возникнет ошибка. Для больших чисел следует использовать тип <code>longint</code> или <code>real</code>.</p>
+
+<p>Разные типы данных требуют разного формата ввода. Например, для вещественных чисел (тип <code>real</code>) разделителем части обычно является точка, а не запятая, в зависимости от настроек региональной локали, но в стандартном Pascal часто используется точка. Неправильный формат может привести к остановке ввода.</p>
+
+<ul>
+<li>Тип <strong>integer</strong> подходит для целых чисел от -32768 до 32767.</li>
+<li>Тип <code>longint</code> расширяет диапазон до миллиардов.</li>
+<li>Тип <em>real</em> используется для дробных значений с плавающей точкой.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда выводите подсказку перед вводом: writeln('Введите число: '); readln(x); Это сделает программу понятной для пользователя.</p></aside>
+
+<h2 id="заключение">Заключение</h2>
+
+<p>Подводя итог, можно с уверенностью сказать, что оператор <code>writeln</code> категорически не предназначен для ввода данных с клавиатуры. Это инструмент исключительно для вывода информации. Попытка использовать его для получения данных — это ошибка, которая нарушает логику работы программы и делает невозможным взаимодействие с пользователем.</p>
+
+<p>Для корректного считывания числовых и строковых данных следует всегда использовать операторы <code>read</code> или <code>readln</code>. Понимание этой разницы является фундаментом для написания рабочих программ на языке Pascal. Правильный выбор оператора ввода обеспечивает стабильность и функциональность вашего кода.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Оператор writeln служит только для вывода. Для ввода данных с клавиатуры необходимо использовать read или readln.</p></aside>
+
+<details class="pb-accordion"><summary>Почему возникла такая путаница?</summary><div class="pb-accordion-body"><p>Многие новички путают эти термины из-за схожести звучания (write и read) или из-за того, что в некоторых других языках ввода/вывода используются схожие конструкции, но в Pascal строгая типизация потоков исключает такую возможность.</p></div></details>
+
+<details>
+<summary>Почему нельзя использовать writeln для ввода?</summary>
+<p>Оператор <code>writeln</code> (write line) предназначен для записи данных в выходной поток. Он не имеет функционала для чтения из входного потока (клавиатуры). Синтаксически и логически это два противоположных процесса.</p>
+</details>
+
+<details>
+<summary>В чем разница между read и readln?</summary>
+<p>Оба оператора считывают данные. Разница в том, что <code>readln</code> после считывания данных "съедает" символ переноса строки (нажатие Enter), а <code>read</code> оставляет его в буфере, что может вызвать проблемы при последующем вводе.</p>
+</details>
+
+<details>
+<summary>Что делать, если программа не принимает ввод?</summary>
+<p>Проверьте, не используете ли вы <code>writeln</code> вместо <code>readln</code>. Также убедитесь, что вы нажимаете Enter после ввода данных и что тип переменной соответствует вводимому значению (например, не вводите текст в числовую переменную).</p>
+</details>
+
+<details>
+<summary>Можно ли вводить несколько чисел одной командой?</summary>
+<p>Да, оператор <code>readln(a, b, c)</code> позволяет ввести три числа через пробел в одной строке. Они будут распределены по переменным <code>a</code>, <code>b</code> и <code>c</code> соответственно.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-nauchitsya-bystro-pechatat-na-klaviature-video.html" class="pb-related-card">
+                <span class="pb-related-title">Как научиться быстро печатать: видеоуроки и тренажеры 2026</span>
+                <span class="pb-related-desc">Эффективные методы обучения слепой печати с видеоинструкциями. ТОП-5 тренажеров, упражнения для скор</span>
+            </a><a href="/drugoe/k/kl/klaviatura-kak-na-noutbuke-dlya-pk-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Клавиатура как на ноутбуке для ПК: как выбрать и купить идеальную модель</span>
+                <span class="pb-related-desc">Полный гид по выбору компактных клавиатур с низким ходом клавиш для ПК. Сравнение мембранных и механ</span>
+            </a><a href="/drugoe/s/sk/skolko-klikov-v-minutu-na-klaviature.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько кликов в минуту на клавиатуре: нормы и тесты скорости</span>
+                <span class="pb-related-desc">Узнайте среднее количество нажатий на клавиатуре в минуту для разных задач: печать, игры, программир</span>
+            </a><a href="/drugoe/g/gd/gde-v-permi-kupit-nedoroguyu-klaviaturu.html" class="pb-related-card">
+                <span class="pb-related-title">Где в Перми купить недорогую клавиатуру: гид по магазинам 2026</span>
+                <span class="pb-related-desc">Ищете бюджетную периферию в Перми? Полный обзор мест, где можно купить недорогую клавиатуру, сравнен</span>
+            </a><a href="/drugoe/c/ch/chto-oznachaet-vzveshennaya-i-nevzveshennaya-klaviatura-v-tsifrovom-pianino.html" class="pb-related-card">
+                <span class="pb-related-title">Взвешенная и невзвешенная клавиатура в цифровом пианино: разница и выбор</span>
+                <span class="pb-related-desc">Чем отличается взвешенная клавиатура от невзвешенной в цифровых пианино? Какой тип подходит для нови</span>
+            </a><a href="/drugoe/k/kl/klaviaturu-kak-narisovat.html" class="pb-related-card">
+                <span class="pb-related-title">Как нарисовать клавиатуру: схемы, стили и пошаговые уроки</span>
+                <span class="pb-related-desc">Учимся рисовать клавиатуру: от простого скетча до детализированной иллюстрации. Советы по перспектив</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">⌨️ Мисс Клава</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a> · <a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a> · <a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a> · <a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a> · <a href="/category/podsvetka-i-dizajn/">🌈 Подсветка и дизайн</a> · <a href="/category/remont-i-ustranenie-neispravnostej/">🛠️ Ремонт и устранение неисправностей</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мисс Клава. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

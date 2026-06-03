@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⌨️</text></svg>">
+    <title>Как вызвать экранную клавиатуру Windows 10 при входе — Мисс Клава</title>
+    <meta name="description" content="Пошаговая инструкция: включение экранной клавиатуры на экране входа в Windows 10. Решаем проблему отсутствия ввода пароля.">
+    <link rel="canonical" href="https://miss-klava.vercel.app/articles/k/ka/kak-vyzvat-ekrannuyu-klaviaturu-windows-10-pri-vkhode-v-sistemu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как вызвать экранную клавиатуру Windows 10 при входе">
+    <meta property="og:description" content="Пошаговая инструкция: включение экранной клавиатуры на экране входа в Windows 10. Решаем проблему отсутствия ввода пароля.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780485530">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">⌨️</span>
+                <span class="pb-logo-text">Мисс Клава</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podklyuchenie-i-nastrojka/" class="pb-dropdown-item">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/" class="pb-dropdown-item">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/" class="pb-dropdown-item">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/" class="pb-dropdown-item">🔣 Спецсимволы и знаки</a>
+<a href="/category/podsvetka-i-dizajn/" class="pb-dropdown-item">🌈 Подсветка и дизайн</a>
+<a href="/category/remont-i-ustranenie-neispravnostej/" class="pb-dropdown-item">🛠️ Ремонт и устранение неисправностей</a>
+<a href="/category/klaviatury-na-smartfonakh/" class="pb-dropdown-item">📱 Клавиатуры на смартфонах</a>
+<a href="/category/igrovye-nastrojki/" class="pb-dropdown-item">🎮 Игровые настройки</a>
+<a href="/category/virtualnaya-klaviatura/" class="pb-dropdown-item">💻 Виртуальная клавиатура</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧹 Уход и чистка</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как вызвать экранную клавиатуру Windows 10 при входе</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#быстрый-доступ-через-панель-специальных-возможностей">Быстрый доступ через панель специальных возможностей</a></li><li><a href="#использование-командной-строки-для-принудительного-запуска">Использование командной строки для принудительного запуска</a></li><li><a href="#активация-через-реестр-и-параметры-системы">Активация через реестр и параметры системы</a></li><li><a href="#таблица-методов-решения-проблемы">Таблица методов решения проблемы</a></li><li><a href="#альтернативные-варианты-ввода-пароля">Альтернативные варианты ввода пароля</a></li><li><a href="#устранение-неполадок-драйверов-и-служб">Устранение неполадок драйверов и служб</a></li><li><a href="#советы-для-пользователей-сенсорных-экранов">Советы для пользователей сенсорных экранов</a></li><li><a href="#заключение-и-проверка-работоспособности">Заключение и проверка работоспособности</a></li><li><a href="#вопросы-и-ответы">Вопросы и ответы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kakuyu-klaviaturu-vybrat-dlya-raboty-s-tekstom.html">Какую клавиатуру выбрать для работы с текстом: гид по выбору</a></li><li><a href="/drugoe/k/ka/kakuyu-klaviaturu-kupit-do-2000-rublej.html">Какую клавиатуру купить до 2000 рублей: Топ-5 лучших моделей</a></li><li><a href="/drugoe/c/ch/chto-takoe-mekhanicheskoe-klaviatura.html">Механическая клавиатура: устройство, типы свитчей и выбор</a></li><li><a href="/drugoe/k/ka/kak-otklyuchit-zvuk-klaviatury-na-kompyutere-vindovs-10.html">Как отключить звук клавиатуры на Windows 10: полное руководство</a></li><li><a href="/drugoe/s/so/sostavit-programmu-kotoraya-posle-vvedennogo-s-klaviatury-chisla-v-diapazone-ot-1-do-99.html">Создание программы ввода числа 1-99: Полный гайд по коду и логике</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как вызвать экранную клавиатуру Windows 10 при входе в систему</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#быстрый-доступ-через-панель-специальных-возможностей">Быстрый доступ через панель специальных возможностей</a></li><li><a href="#использование-командной-строки-для-принудительного-запуска">Использование командной строки для принудительного запуска</a></li><li><a href="#активация-через-реестр-и-параметры-системы">Активация через реестр и параметры системы</a></li><li><a href="#таблица-методов-решения-проблемы">Таблица методов решения проблемы</a></li><li><a href="#альтернативные-варианты-ввода-пароля">Альтернативные варианты ввода пароля</a></li><li><a href="#устранение-неполадок-драйверов-и-служб">Устранение неполадок драйверов и служб</a></li><li><a href="#советы-для-пользователей-сенсорных-экранов">Советы для пользователей сенсорных экранов</a></li><li><a href="#заключение-и-проверка-работоспособности">Заключение и проверка работоспособности</a></li><li><a href="#вопросы-и-ответы">Вопросы и ответы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда пользователь не может ввести пароль от учетной записи на экране блокировки из-за неработающей физической клавиатуры, встречается чаще, чем кажется. Это может произойти после случайного отключения USB-контроллера, сбоя драйверов или просто из-за разрядившейся беспроводной мыши и клавиатуры. В такой момент система <code>Windows 10</code> блокирует доступ к данным, и без альтернативного способа ввода попасть в рабочий стол становится практически невозможно.</p>
+
+<p>К счастью, разработчики ОС предусмотрели встроенный инструмент — <strong>Экранную клавиатуру</strong>, который доступен даже до авторизации пользователя. Однако по умолчанию эта функция часто скрыта или отключена в параметрах удобства доступа. Чтобы не прибегать к сложным методам сброса пароля или переустановке системы, достаточно знать правильный путь к настройкам на заблокированном экране.</p>
+
+<h2 id="быстрый-доступ-через-панель-специальных-возможностей">Быстрый доступ через панель специальных возможностей</h2>
+
+<p>Самый очевидный и быстрый способ вызвать виртуальный ввод — использовать иконку специальных возможностей, расположенную в нижнем правом углу экрана входа в систему. Визуально она может отличаться в зависимости от версии сборки <em>Windows 10</em>, но обычно представляет собой значок, напоминающего человечка или часы с пометкой.</p>
+
+<p>При нажатии на эту иконку открывается всплывающее меню, где необходимо выбрать пункт <strong>Экранная клавиатура</strong>. После этого на дисплее появится полноценная виртуальная раскладка, позволяющая кликать мышью или касанием по буквам для ввода пароля. Это решение работает мгновенно, если операционная система загрузила базовые драйверы ввода.</p>
+
+<p>Если иконка отсутствуют или нажатие на неё не приводит к появлению клавиатуры, проблема может быть глубже — в отключенной службе или поврежденном профиле удобства доступа. В таком случае потребуется более детальный подход через настройки параметров.</p>
+
+<h2 id="использование-командной-строки-для-принудительного-запуска">Использование командной строки для принудительного запуска</h2>
+
+<p>Когда стандартные методы не срабатывают, можно попытаться запустить экранную клавиатуру через <strong>Командную строку</strong> с правами администратора. Этот метод требует наличия загрузочной флешки с образом <em>Windows 10</em> или использования режима восстановления системы, доступ к которому можно получить через перезагрузку с зажатой Shift.</p>
+
+<p>Чтобы выполнить команду, необходимо ввести <code>osk.exe</code> в командной строке. Эта утилита отвечает за запуск <strong>On-Screen Keyboard</strong>. Если система загрузилась в режиме восстановления, вы можете ввести эту команду, и клавиатура появится прямо в среде WinRE, что позволит изменить настройки учетной записи.</p>
+
+<p>Иногда требуется перенастроить утилиту <strong>Утилиты поддержки</strong> так, чтобы она запускалась автоматически вместо программы <code>utilman.exe</code>. Это делается через команду <code>copy c:\windows\system32\osk.exe c:\windows\system32\utilman.exe</code>. После перезагрузки нажатие на иконку специальных возможностей будет открывать именно экранную клавиатуру, а не панель настроек.</p>
+
+<blockquote>⚠️ Внимание: Замена системных утилит (utilman.exe) на сторонние программы может нарушить целостность системы безопасности и привести к проблемам при будущих обновлениях. Используйте этот метод только в крайнем случае.</blockquote>
+
+<details class="pb-accordion"><summary>Важно знать о правах доступа</summary><div class="pb-accordion-body"><p>Если вы работаете в режиме восстановления без загрузки полного профиля пользователя, некоторые команды могут выдавать ошибку "доступ запрещен". В этом случае попробуйте выполнить команду с указанием полного пути к файлу.</p></div></details>
+
+<h2 id="активация-через-реестр-и-параметры-системы">Активация через реестр и параметры системы</h2>
+
+<p>Для постоянного решения проблемы необходимо изменить настройки в <strong>Реестре</strong> или параметрах системы, чтобы клавиатура появлялась автоматически при каждом входе. Это особенно актуально для пользователей, которые часто забывают подключать физическое устройство ввода или используют сенсорные экраны.</p>
+
+<p>Необходимо открыть редактор реестра (regedit) и перейти по пути <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell</code>. Здесь стоит поискать параметры, отвечающие за поведение ввода. Однако более надежный путь лежит через классическую Панель управления в разделе <strong>Центр специальных возможностей</strong>.</p>
+
+<p>В меню "Облегчение работы с клавиатурой" имеется переключатель <strong>Запускать экранную клавиатуру всегда</strong>. Включив эту опцию, вы гарантируете, что виртуальный ввод будет доступен даже при сбоях оборудования. Если система не сохраняет настройки, возможно, профиль пользователя поврежден, и потребуется создание новой учетной записи.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед перезагрузкой</h4><label class="check-item"><input type="checkbox"><span>Проверить подключение USB-устройств</span></label><label class="check-item"><input type="checkbox"><span>Включить опцию в центре специальных возможностей</span></label><label class="check-item"><input type="checkbox"><span>Перезагрузить компьютер</span></label><label class="check-item"><input type="checkbox"><span>Попробовать ввести пароль мышкой</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="таблица-методов-решения-проблемы">Таблица методов решения проблемы</h2>
+
+<p>Для наглядности сравним основные способы решения проблемы с отсутствием клавиатуры на экране входа. Каждый метод имеет свои особенности применения и уровень сложности выполнения действий.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Метод</th>
+      <th>Сложность</th>
+      <th>Необходимые условия</th>
+      <th>Эффективность</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Иконка специальных возможностей</td>
+      <td>Низкая</td>
+      <td>Работающая мышь/тачпад</td>
+      <td>Высокая</td>
+    </tr>
+    <tr>
+      <td>Командная строка (osk.exe)</td>
+      <td>Средняя</td>
+      <td>Доступ к консоли восстановления</td>
+      <td>Средняя</td>
+    </tr>
+    <tr>
+      <td>Замена utilman.exe</td>
+      <td>Высокая</td>
+      <td>Загрузочная флешка, права админа</td>
+      <td>Полная</td>
+    </tr>
+    <tr>
+      <td>Создание новой учетной записи</td>
+      <td>Высокая</td>
+      <td>Доступ к системным папкам</td>
+      <td>100%</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Выбор метода зависит от того, насколько критична проблема и есть ли у вас доступ к альтернативным носителям. Если у вас есть сенсорный экран, первый метод сработает наилучшим образом без лишних манипуляций с системными файлами.</p>
+
+<div class="pb-poll" id="poll-c9f296eb"><div class="pb-poll-question">📊 Какой способ вы использовали?</div><div class="pb-poll-option" data-poll="c9f296eb" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Иконка в углу</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c9f296eb" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Командная строка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c9f296eb" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Замена файлов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c9f296eb" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не пришлось решать проблему</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="альтернативные-варианты-ввода-пароля">Альтернативные варианты ввода пароля</h2>
+
+<p>Если виртуальная клавиатура по каким-то причинам не отображается или работает некорректно, существуют другие способы аутентификации. <strong>ПИН-код</strong> часто является более стабильным методом входа, так как он использует меньше системных ресурсов и драйверов для ввода.</p>
+
+<p>На экране входа часто доступна ссылка <strong>Войти с помощью ПИН-кода</strong> под полем ввода пароля. Этот метод bypass-ит сложные драйверы ввода и работает даже в самых минималистичных средах загрузки. Если ПИН-код не настроен, его можно активировать только после входа в систему.</p>
+
+<p>Также рассмотрите возможность использования <strong>Графического пароля</strong> или биометрической аутентификации (Windows Hello), если ваше устройство оснащено соответствующими датчиками. Эти методы не требуют ввода символов и позволяют обойти проблему с отсутствием клавиатуры полностью.</p>
+
+<h2 id="устранение-неполадок-драйверов-и-служб">Устранение неполадок драйверов и служб</h2>
+
+<p>Частой причиной отсутствия экранной клавиатуры является остановка службы <strong>Touch Keyboard and Handwriting Panel Service</strong>. Для проверки выполните команду <code>services.msc</code> в окне "Выполнить", если у вас есть доступ к системе.</p>
+
+<p>В списке служб найдите указанный выше сервис и убедитесь, что его тип запуска установлен в <strong>Автоматически</strong>. Если служба остановлена, нажмите кнопку <strong>Запустить</strong>. Это действие часто восстанавливает функциональность виртуальной клавиатуры на всех этапах работы системы.</p>
+
+<p>Иногда помогает полное удаление и переустановка драйверов клавиатуры в <strong>Диспетчере устройств</strong>. Перезагрузка после удаления драйвера заставляет систему автоматически подтянуть стандартный стек ввода, что может исправить ошибку отображения.</p>
+
+<blockquote>⚠️ Внимание: Изменение настроек служб требует осторожности. Отключение системных сервисов может привести к нестабильной работе других компонентов Windows.</blockquote>
+
+<h2 id="советы-для-пользователей-сенсорных-экранов">Советы для пользователей сенсорных экранов</h2>
+
+<p>Владельцы ноутбуков и планшетов с сенсорными экранами часто сталкиваются с тем, что клавиатура не всплывает автоматически. В настройках <code>Параметры → Устройства → Ввод</code> следует включить опцию <strong>Показывать кнопку клавиатуры</strong> на панели задач.</p>
+
+<p>Это обеспечивает быстрый доступ к <strong>Тач-клавиатуре</strong>, которая отличается от стандартной экранной клавиатуры более крупными кнопками и поддержкой жестов. На экране входа эта кнопка также может появиться в нижнем правом углу, если конфигурация системы позволяет.</p>
+
+<p>Для максимальной эффективности используйте <strong>Разделение клавиатуры</strong> на сенсорных устройствах. Это облегчает ввод двумя большими пальцами и снижает риск ошибок при наборе сложного пароля на маленьком экране.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если экранная клавиатура открывается, но на ней нет букв или цифр, проверьте раскладку. Часто при сбое системы переключается на английский язык. Используйте кнопку переключения языка внизу клавиатуры.</p></aside>
+
+<h2 id="заключение-и-проверка-работоспособности">Заключение и проверка работоспособности</h2>
+
+<p>После выполнения всех манипуляций важно убедиться, что проблема решена окончательно. Перезагрузите компьютер и проверьте, появляется ли <strong>Экранная клавиатура</strong> на экране входа в систему без дополнительных действий.</p>
+
+<p>Если вы использовали метод замены системных файлов, не забудьте вернуть исходные значения после успешного входа в систему. Это предотвратит потенциальные уязвимости безопасности и конфликты при обновлении ПО.</p>
+
+<p>Помните, что регулярное обслуживание системы и проверка обновлений драйверов помогают избежать подобных ситуаций. <strong>Windows 10</strong> — сложная ОС, и иногда её компоненты требуют ручного вмешательства для корректной работы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Экранная клавиатура — это не просто удобство, а критически важный инструмент доступности, который должен быть настроен заранее, до возникновения проблем с физическим вводом.</p></aside>
+
+<p>Важно отметить, что некоторые обновления Windows могут сбрасывать настройки специальных возможностей. Поэтому <mark>проверка наличия иконки специальных возможностей на экране входа должна стать вашей привычной процедурой после каждого крупного обновления системы</mark>.</p>
+
+<p>Соблюдение этих рекомендаций позволит вам всегда иметь доступ к своему компьютеру, даже если физическая клавиатура выйдет из строя в самый неподходящий момент.</p>
+
+<blockquote>⚠️ Внимание: Если вы используете корпоративную версию Windows с групповыми политиками, администратор сети может заблокировать запуск сторонних утилит ввода. В этом случае обратитесь к ИТ-отделу вашей организации.</blockquote>
+
+<h2 id="вопросы-и-ответы">Вопросы и ответы</h2>
+
+<details>
+  <summary>Почему не работает иконка специальных возможностей на экране входа?</summary>
+  <p>Это может быть связано с повреждением системных файлов или отключением службы ввода. Попробуйте запустить проверку диска или использовать режим восстановления.</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать голосовой ввод вместо клавиатуры?</summary>
+  <p>Да, но функция голосового ввода на экране входа в Windows 10 часто отключена по умолчанию и требует предварительной настройки в системе.</p>
+</details>
+
+<details>
+  <summary>Что делать, если клавиатура появляется, но не печатает?</summary>
+  <p>Попробуйте переключить раскладку клавиатуры (кнопка с языком внизу экрана). Иногда система зависает на языке, который не совпадает с требуемым.</p>
+</details>
+
+<details>
+  <summary>Работает ли этот метод для Windows 11?</summary>
+  <p>Да, интерфейс и методы доступа к экранной клавиатуре в Windows 11 практически идентичны Windows 10, с небольшими визуальными изменениями.</p>
+</details>
+
+<details>
+  <summary>Как вернуть стандартную клавиатуру, если я заменил utilman.exe?</summary>
+  <p>Загрузитесь с загрузочной флешки и выполните команду восстановления оригинального файла utilman.exe из папки System32.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kakuyu-klaviaturu-vybrat-dlya-raboty-s-tekstom.html" class="pb-related-card">
+                <span class="pb-related-title">Какую клавиатуру выбрать для работы с текстом: гид по выбору</span>
+                <span class="pb-related-desc">Полное руководство по выбору клавиатуры для набора текста. Сравнение механики, мембраны, оптики. Обз</span>
+            </a><a href="/drugoe/k/ka/kakuyu-klaviaturu-kupit-do-2000-rublej.html" class="pb-related-card">
+                <span class="pb-related-title">Какую клавиатуру купить до 2000 рублей: Топ-5 лучших моделей</span>
+                <span class="pb-related-desc">Обзор надежных клавиатур стоимостью до 2000 рублей. Сравнение мембранных и механических моделей, сов</span>
+            </a><a href="/drugoe/c/ch/chto-takoe-mekhanicheskoe-klaviatura.html" class="pb-related-card">
+                <span class="pb-related-title">Механическая клавиатура: устройство, типы свитчей и выбор</span>
+                <span class="pb-related-desc">Подробный разбор механических клавиатур: принцип работы, виды переключателей, отличия от мембраны и </span>
+            </a><a href="/drugoe/k/ka/kak-otklyuchit-zvuk-klaviatury-na-kompyutere-vindovs-10.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить звук клавиатуры на Windows 10: полное руководство</span>
+                <span class="pb-related-desc">Пошаговая инструкция по отключению звуков ввода в Windows 10. Настройки системы, реестр и BIOS. Устр</span>
+            </a><a href="/drugoe/s/so/sostavit-programmu-kotoraya-posle-vvedennogo-s-klaviatury-chisla-v-diapazone-ot-1-do-99.html" class="pb-related-card">
+                <span class="pb-related-title">Создание программы ввода числа 1-99: Полный гайд по коду и логике</span>
+                <span class="pb-related-desc">Узнайте, как составить программу для ввода числа от 1 до 99. Разбор алгоритмов, код на Python и C++,</span>
+            </a><a href="/drugoe/c/ch/chto-takoe-klaviatura-v-muzyke-2-klass.html" class="pb-related-card">
+                <span class="pb-related-title">Клавиатура в музыке для 2 класса: уроки и основы</span>
+                <span class="pb-related-desc">Что такое клавиатура в музыке 2 класс: разбор структуры, звуков, истории пианино и простых упражнени</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">⌨️ Мисс Клава</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a> · <a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a> · <a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a> · <a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a> · <a href="/category/podsvetka-i-dizajn/">🌈 Подсветка и дизайн</a> · <a href="/category/remont-i-ustranenie-neispravnostej/">🛠️ Ремонт и устранение неисправностей</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мисс Клава. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

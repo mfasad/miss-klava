@@ -1,0 +1,48 @@
+{
+  "rewrites": [
+    {
+      "source": "/goryachie-klavishi/:path*",
+      "destination": "https://miss-klava-bin-01.vercel.app/goryachie-klavishi/:path*"
+    },
+    {
+      "source": "/raskladka-i-yazyki/:path*",
+      "destination": "https://miss-klava-bin-01.vercel.app/raskladka-i-yazyki/:path*"
+    },
+    {
+      "source": "/remont-i-ustranenie-neispravnostej/:path*",
+      "destination": "https://miss-klava-bin-01.vercel.app/remont-i-ustranenie-neispravnostej/:path*"
+    },
+    {
+      "source": "/spetssimvoly-i-znaki/:path*",
+      "destination": "https://miss-klava-bin-01.vercel.app/spetssimvoly-i-znaki/:path*"
+    },
+    {
+      "source": "/klaviatury-na-smartfonakh/:path*",
+      "destination": "https://miss-klava-bin-01.vercel.app/klaviatury-na-smartfonakh/:path*"
+    },
+    {
+      "source": "/drugoe/:path*",
+      "destination": "https://miss-klava-bin-01.vercel.app/drugoe/:path*"
+    },
+    {
+      "source": "/podsvetka-i-dizajn/:path*",
+      "destination": "https://miss-klava-bin-02.vercel.app/podsvetka-i-dizajn/:path*"
+    },
+    {
+      "source": "/podklyuchenie-i-nastrojka/:path*",
+      "destination": "https://miss-klava-bin-02.vercel.app/podklyuchenie-i-nastrojka/:path*"
+    },
+    {
+      "source": "/igrovye-nastrojki/:path*",
+      "destination": "https://miss-klava-bin-02.vercel.app/igrovye-nastrojki/:path*"
+    },
+    {
+      "source": "/virtualnaya-klaviatura/:path*",
+      "destination": "https://miss-klava-bin-02.vercel.app/virtualnaya-klaviatura/:path*"
+    },
+    {
+      "source": "/ukhod-i-chistka/:path*",
+      "destination": "https://miss-klava-bin-02.vercel.app/ukhod-i-chistka/:path*"
+    }
+  ]
+}

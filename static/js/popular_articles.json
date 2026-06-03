@@ -1,0 +1,882 @@
+[
+  {
+    "title": "Что лишнее: клавиатура, джойстик, сканер или принтер? Разбор на 2026 год",
+    "slug": "chto-lishnee-iz-slov-klaviatura-dzhojstik-skaner-printer",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Разбираемся, какое устройство из списка (клавиатура, джойстик, сканер, принтер) не относится к стандартным периферийным ...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Элемент «Клавиатура» в блок-схеме: назначение и примеры использования",
+    "slug": "chto-pokazyvaet-element-klaviatura-v-blok-skheme",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Что означает блок «Клавиатура» в алгоритмах и блок-схемах: разбор символа, правила применения и типичные ошибки при сост...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Миди-клавиатура на синтезаторе: что это и как работает",
+    "slug": "chto-takoe-midi-klaviatura-na-sintezatore",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Подробный разбор MIDI-клавиатуры синтезатора: назначение, типы, подключение и настройка. Разбираемся, чем отличается от ...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Молоточковая клавиатура в пианино: что это и зачем нужна",
+    "slug": "chto-znachit-molotochkovaya-klaviatura-na-elektronnom-pianino",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Разбираемся, как работает молоточковая механика в электронных пианино, её плюсы и минусы, а также как выбрать инструмент...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Как подключить и настроить две клавиатуры отдельно на ПК",
+    "slug": "kak-ispolzovat-2-klaviatury-otdelno",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Пошаговая инструкция по разделению двух клавиатур на одном компьютере для Windows, macOS и Linux. Настройка ввода, раскл...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Как подключить клавиатуру ноутбука к ПК: 5 проверенных способов",
+    "slug": "kak-ispolzovat-klaviaturu-noutbuka-dlya-kompyutera",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Пошаговая инструкция по использованию клавиатуры от ноутбука на стационарном компьютере: USB, Bluetooth, переходники и н...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Как подключить клавиатуру к Windows 10: пошаговая инструкция",
+    "slug": "kak-na-windows-10-podklyuchit-klaviaturu",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Подробное руководство по подключению проводной и беспроводной клавиатуры к Windows 10. Решение проблем с драйверами, Blu...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Как найти параметры клавиатуры: полное руководство 2026",
+    "slug": "kak-najti-parametry-klaviatury",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Пошаговая инструкция по определению модели, PID/VID, прошивки и технических характеристик клавиатуры на Windows, macOS и...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Настройка электронной клавиатуры на ноутбуке: пошаговая инструкция",
+    "slug": "kak-nastroit-elektronnuyu-klaviaturu-na-noutbuke",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Как правильно настроить сенсорную или механическую клавиатуру на ноутбуке: языки, горячие клавиши, подсветку и устранени...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Как перевести управление на клавиатуру: пошаговая инструкция 2026",
+    "slug": "kak-perevesti-upravlenie-na-klaviaturu",
+    "catSlug": "podklyuchenie-i-nastrojka",
+    "desc": "Подробное руководство по переключению управления с мыши на клавиатуру для Windows, macOS и Linux. Горячие клавиши, настр...",
+    "cat": "Подключение и настройка",
+    "icon": "🔌"
+  },
+  {
+    "title": "Клавиатура печатает не те символы — как исправить за 5 минут",
+    "slug": "chto-delat-esli-klaviatura-pomenyala-znachenie",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Разбираем 7 причин, почему клавиатура поменяла раскладку или значения клавиш, и даем пошаговые инструкции по восстановле...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Не меняется раскладка в Windows 10: 7 способов исправить",
+    "slug": "chto-delat-esli-ne-menyaetsya-raskladka-klaviatury-v-vindovs-10",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Раскладка клавиатуры застряла на одном языке? Узнайте, почему Windows 10 не переключает языки и как вернуть работоспособ...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Буквы нижнего регистра на клавиатуре: что это и как переключать",
+    "slug": "chto-takoe-bukvy-nizhnego-registra-na-klaviature",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Подробное объяснение, что такое буквы нижнего регистра на клавиатуре, как их включать/отключать на Windows, Mac и смартф...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Клавиша «По» на клавиатуре: где находится и как использовать",
+    "slug": "chto-takoe-po-v-klaviature",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Разбираемся, что означает клавиша «По» на клавиатуре, где её искать в разных раскладках и как правильно набирать букву «...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Регистры клавиатуры: что это, как переключать и исправлять ошибки",
+    "slug": "chto-takoe-registrov-klaviatury",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Подробное объяснение регистров клавиатуры (верхний/нижний), их назначения, горячих клавиш для переключения и решения про...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Где меняется раскладка клавиатуры: на ПК, ноутбуке, телефоне",
+    "slug": "gde-menyaetsya-raskladka-klaviatury",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Пошаговая инструкция, как поменять раскладку на Windows, macOS, Android и iOS. Горячие клавиши, настройки системы и реше...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Где русские буквы на клавиатуре: раскладка и расположение в 2026",
+    "slug": "gde-russkie-bukvy-na-klaviature",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Подробная схема расположения русских букв на клавиатуре ПК, ноутбука и телефона. Как переключить раскладку, найти ЙЦУКЕН...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Как быстро научиться печатать на клавиатуре с YouTube: 7 проверенных способов",
+    "slug": "kak-bystro-nauchitsya-pechatat-na-klaviature-yutub",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Смотрите обучающие видео на YouTube, тренируйтесь с онлайн-симуляторами и осваивайте слепой метод печати за 2-4 недели. ...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Как быстро печатать на английской клавиатуре: методы и тренажеры",
+    "slug": "kak-bystro-pechat-na-klaviature-na-anglijskom",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Проверенные способы научиться слепой печати на английском: упражнения, программы, ошибки новичков и советы для ускорения...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Как добавить иврит в раскладку клавиатуры — пошаговая инструкция 2026",
+    "slug": "kak-dobavit-ivrit-v-raskladku-klaviatury",
+    "catSlug": "raskladka-i-yazyki",
+    "desc": "Подробное руководство по установке ивритской раскладки на Windows, macOS, Android и iOS. Настройка переключения, решение...",
+    "cat": "Раскладка и языки",
+    "icon": "🌐"
+  },
+  {
+    "title": "Программируемые клавиши на клавиатуре: назначение и настройка",
+    "slug": "chto-takoe-programmiruemye-klavishi-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Что такое программируемые клавиши на клавиатуре, как их настроить для игр, работы и макросов. Пошаговые инструкции для R...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Клавиша Shift на ноутбуке: функции, горячие клавиши и секреты",
+    "slug": "chto-takoe-shift-na-klaviature-noutbuka",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Что такое Shift на клавиатуре ноутбука: подробное руководство по использованию, сочетаниям клавиш и устранению неполадок...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Кнопка Num Lock на клавиатуре: что это и зачем нужна",
+    "slug": "chto-za-knopka-num-lock-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Разбираемся, для чего нужна клавиша Num Lock, как её включить/отключить на разных клавиатурах и что делать, если она не ...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "PS, SL, PB на клавиатуре — что это за клавиши и как ими пользоваться?",
+    "slug": "chto-znachit-ps-sl-pb-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Разбираемся, что означают надписи PS, SL, PB на клавиатуре, где они расположены и как правильно их использовать в Window...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Стрелки на клавиатуре: назначение, функции и горячие клавиши",
+    "slug": "chto-znachit-strelka-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Разбираемся, что означают стрелки на клавиатуре (↑, ↓, ←, →), как они работают в Windows, Mac и Linux, а также их роль в...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Где клавиша Control на клавиатуре: расположение на всех устройствах",
+    "slug": "control-gde-eta-klavisha-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Подробный гайд с картинками и схемами: где находится Ctrl на ПК, Mac, ноутбуке и игровых клавиатурах. Горячие клавиши и ...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Кнопка Windows на клавиатуре: 15 скрытых функций, о которых вы не знали",
+    "slug": "dlya-chego-knopka-vindovs-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Зачем нужна клавиша Win на клавиатуре? Подробный разбор всех возможностей: от горячих клавиш до диагностики системы. Инс...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Клавиша Shift на клавиатуре: 10 функций, о которых вы не знали",
+    "slug": "dlya-chego-shift-na-klaviature",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Зачем нужен Shift на клавиатуре? Разбираем все способы использования: от ввода заглавных букв до скрытых горячих клавиш ...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Клавиша F4 на ноутбуке: функции, сочетания и скрытые возможности",
+    "slug": "f4-na-klaviature-noutbuka-dlya-chego",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Подробный разбор назначения клавиши F4 на ноутбуках разных брендов: от закрытия окон до BIOS и игровых режимов. Горячие ...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Где клавиша Control на Mac? Расположение и аналоги на клавиатуре Apple",
+    "slug": "gde-klavisha-control-na-klaviature-mac",
+    "catSlug": "goryachie-klavishi",
+    "desc": "Не можете найти Control на MacBook или iMac? Узнайте, где находится клавиша Ctrl на клавиатуре Apple, её аналоги и как и...",
+    "cat": "Горячие клавиши",
+    "icon": "⚡"
+  },
+  {
+    "title": "Где буква «Ы» (игрек) на клавиатуре: расположение на всех раскладках",
+    "slug": "gde-bukva-igrek-na-klaviature",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти букву «Ы» на клавиатуре? Узнайте, где она находится на русском и английском языках, на ноутбуках, смартф...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где кнопка Input на клавиатуре: поиск и функции на разных устройствах",
+    "slug": "gde-knopka-input-na-klaviature",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти клавишу Input? Узнайте, где она расположена на ПК, ноутбуке, ТВ-пультах и игровых клавиатурах, а также к...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где кнопка корня √ на клавиатуре — все способы ввода",
+    "slug": "gde-knopka-kornya-na-klaviature",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти знак корня на клавиатуре? Узнайте, как вводить √ на Windows, Mac, телефоне и в программах (Word, Excel)....",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где латинские цифры на клавиатуре ноутбука — 3 способа ввода",
+    "slug": "gde-latinskie-tsifry-na-klaviature-noutbuka",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не знаете, как набрать римские цифры (I, V, X, L) на ноутбуке? Подробная инструкция для Windows, Mac и Linux с горячими ...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Кнопка Keypad на клавиатуре: где находится и как использовать",
+    "slug": "gde-na-klaviature-knopka-keypad",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Подробный гайд по поиску клавиши Keypad (Num Lock, цифровой блок) на разных типах клавиатур: от ноутбуков до игровых мод...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где на клавиатуре запятая сверху: поиск на всех раскладках",
+    "slug": "gde-na-klaviature-knopka-zapyataya-sverkhu",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти верхнюю запятую на клавиатуре? Разбираем расположение символа «’» на Windows, Mac, Linux и смартфонах. П...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где на клавиатуре Mac вопросительный знак? 3 способа ввода",
+    "slug": "gde-na-klaviature-mac-voprositelnyj-znak",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти вопросительный знак на клавиатуре MacBook или iMac? Узнайте все способы ввода, включая сочетания клавиш ...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где на клавиатуре находится кнопка решетка (#) — поиск на всех раскладках",
+    "slug": "gde-na-klaviature-nakhoditsya-knopka-reshetka",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти символ решетки (#) на клавиатуре? Подробный гайд с картинками, горячими клавишами и нюансами для Windows...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где на клавиатуре значок °C — 5 способов вставить градус Цельсия",
+    "slug": "gde-na-klaviature-nakhoditsya-znachok-gradusov-tselsiya",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти символ градуса на клавиатуре? Узнайте, как вставить °C на Windows, Mac, смартфоне или через Alt-коды. По...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Где на клавиатуре ноутбука знак градуса — 5 способов ввода",
+    "slug": "gde-na-klaviature-noutbuka-nakhoditsya-znak-gradusa",
+    "catSlug": "spetssimvoly-i-znaki",
+    "desc": "Не можете найти ° на клавиатуре? Узнайте, как вставить знак градуса на ноутбуках Windows, Mac и Linux — горячие клавиши,...",
+    "cat": "Спецсимволы и знаки",
+    "icon": "🔣"
+  },
+  {
+    "title": "Как изменить цвет клавиатуры ASUS Cerberus: пошаговая инструкция",
+    "slug": "asus-tserberus-klaviatura-kak-izmenit-tsvet",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Подробное руководство по настройке RGB-подсветки на игровой клавиатуре ASUS Cerberus. Узнайте, как изменить цвет, создат...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как включить подсветку на беспроводной клавиатуре: инструкция 2026",
+    "slug": "besprovodnaya-klaviatura-kak-vklyuchit-podsvetku",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Пошаговое руководство по активации подсветки на беспроводных клавиатурах Razer, Logitech, Redragon и других. Решение про...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как изменить подсветку клавиатуры Logitech: полное руководство",
+    "slug": "kak-izmenit-podsvetku-na-klaviature-logitech",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Пошаговая инструкция по настройке RGB-подсветки на клавиатурах Logitech: от базовых цветов до сложных эффектов. Сравнени...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как изменить подсветку на клавиатуре Blazing Pro: инструкция 2026",
+    "slug": "kak-menyat-podsvetka-na-klaviature-blazing-pro",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Пошаговое руководство по настройке RGB-подсветки на клавиатуре Blazing Pro: режимы, цвета, яркость и решение проблем. Ра...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как изменить подсветку клавиатуры Defender Tor: пошаговая инструкция",
+    "slug": "kak-menyat-podsvetku-na-klaviature-defender-tor",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Подробное руководство по настройке RGB-подсветки на игровой клавиатуре Defender Tor: смена цветов, эффектов и режимов. Р...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как изменить подсветку клавиатуры на Lenovo Legion: пошаговая инструкция",
+    "slug": "kak-menyat-podsvetku-na-klaviature-lenovo-legion",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Подробное руководство по настройке RGB-подсветки на игровых клавиатурах Lenovo Legion: через ПО, горячие клавиши и BIOS....",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как изменить подсветку клавиатуры MSI: пошаговая инструкция 2026",
+    "slug": "kak-menyat-rastsvetku-na-klaviature-msi",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Разбираемся, как настроить RGB-подсветку на игровых клавиатурах MSI через Mystic Light, SteelSeries Engine и горячие кла...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как нарисовать 3D-клавиатуру: пошаговое руководство для начинающих",
+    "slug": "kak-narisovat-klaviaturu-3d",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Узнайте, как создать реалистичную 3D-клавиатуру с нуля: от эскиза до финальной визуализации. Инструменты, техники и сове...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как настроить цвет клавиатуры на ПК: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-tsvet-klaviatury-na-pk",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Подробное руководство по настройке RGB-подсветки клавиатуры на Windows и macOS. Схемы для Razer, Logitech, SteelSeries и...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "Как отключить подсветку клавиатуры на Acer Defender: 5 способов",
+    "slug": "kak-otklyuchit-podsvetku-klaviatury-defender",
+    "catSlug": "podsvetka-i-dizajn",
+    "desc": "Пошаговая инструкция по отключению RGB-подсветки на клавиатуре Acer Predator Defender. Способы через FN-клавиши, BIOS, п...",
+    "cat": "Подсветка и дизайн",
+    "icon": "🌈"
+  },
+  {
+    "title": "A1278: как подключить шлейф клавиатуры — пошаговая инструкция",
+    "slug": "a1278-kak-vstavit-shlejf-klaviatury",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Детальное руководство по замене шлейфа клавиатуры на MacBook A1278: инструменты, разборка, подключение и тестирование. И...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Как разобрать клавиатуру Razer Blade Pro: пошаговое руководство",
+    "slug": "blade-pro-klaviatura-kak-razobrat",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Детальная инструкция по разборке игровой клавиатуры Razer Blade Pro: инструменты, последовательность действий, советы по...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Как поменять подсветку на клавиатуре Bloody: пошаговая инструкция",
+    "slug": "bloody-klaviatura-kak-pomenyat-podsvetku",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Подробное руководство по замене подсветки на игровых клавиатурах Bloody: разборка, выбор LED, пайка, настройка RGB. Сове...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Что будет если облить клавиатуру водой: последствия и действия",
+    "slug": "chto-budet-esli-oblit-klaviaturu-vodoj",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Облили клавиатуру водой? Узнайте, что произойдет с механической, мембранной и игровой клавиатурой, как спасти устройство...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Что делать, если залил клавиатуру чаем: пошаговая инструкция",
+    "slug": "chto-delat-esli-nalil-chaj-na-klaviaturu",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Залили клавиатуру чаем? Узнайте, как спасти устройство: экстренные меры, разборка, сушка и проверка работоспособности. П...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Клавиатура Bloody не работает: 7 шагов для быстрого ремонта",
+    "slug": "chto-delat-esli-ne-rabotaet-klaviatura-bloody",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Не реагирует клавиатура Bloody? Узнайте причины неисправности и пошаговые инструкции по восстановлению работы. От подклю...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Перебиндились клавиши на клавиатуре — как исправить быстро",
+    "slug": "chto-delat-esli-perebindilis-klavishi-na-klaviature",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Клавиши на клавиатуре работают некорректно? Узнайте причины перебиндинга, способы диагностики и пошаговые инструкции для...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Потерял кнопку клавиатуры ноутбука: что делать и как восстановить",
+    "slug": "chto-delat-esli-poteryal-knopku-ot-klaviatury-noutbuka",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Пошаговая инструкция: как найти, заменить или временно обойтись без потерянной клавиши на ноутбуке. Советы по ремонту и ...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Потерялся USB-приемник от клавиатуры и мыши: что делать в 2026 году",
+    "slug": "chto-delat-esli-poteryalas-fleshka-ot-besprovodnoj-klaviatury-i-myshki",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Пошаговая инструкция: как подключить беспроводную клавиатуру и мышь без оригинального USB-dongle. Совместимые адаптеры, ...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Звуки клавиатуры в микрофоне: как устранить шум за 5 шагов",
+    "slug": "chto-delat-esli-v-mikrofone-slyshno-zvuki-klaviatury",
+    "catSlug": "remont-i-ustranenie-neispravnostej",
+    "desc": "Почему клавиатура слышна в микрофоне и как это исправить: настройки Windows/macOS, выбор оборудования, программные фильт...",
+    "cat": "Ремонт и устранение неисправностей",
+    "icon": "🛠️"
+  },
+  {
+    "title": "Как добавить язык в клавиатуру Android: пошаговая инструкция 2026",
+    "slug": "android-kak-dobavit-yazyk-v-klaviaturu",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Подробное руководство по добавлению языков в клавиатуру на Android: Gboard, Samsung Keyboard, SwiftKey. Решение проблем ...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как поменять клавиатуру на Honor: пошаговая инструкция 2026",
+    "slug": "kak-menyat-klaviaturu-na-khonore",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Подробное руководство по замене клавиатуры на смартфонах Honor: от выбора раскладки до установки сторонних приложений. Р...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как на телефоне включить латиницу для пароля: пошаговая инструкция",
+    "slug": "kak-na-telefone-sdelat-latinskie-bukvy-na-klaviature-dlya-parolya",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Не можете ввести латинские буквы для пароля на смартфоне? Узнайте, как быстро переключить раскладку на Android и iPhone,...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как подключить проводную клавиатуру к Android: пошаговая инструкция",
+    "slug": "kak-nastroit-provodnuyu-klaviaturu-na-android",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Подробное руководство по настройке проводной клавиатуры на Android-смартфонах и планшетах. Решение проблем с драйверами,...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Калибровка клавиатуры Android: пошаговая инструкция 2026",
+    "slug": "kak-otkalibrovat-klaviaturu-android",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Как откалибровать сенсорную или виртуальную клавиатуру на Android: исправляем сдвиги, лаги и неточности нажатий. Рабочие...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как отключить умную клавиатуру Яндекса на Android и iOS",
+    "slug": "kak-otklyuchit-umnuyu-klaviaturu-yandeks",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Пошаговая инструкция по отключению умной клавиатуры Яндекса на смартфонах, планшетах и ПК. Сравнение методов для разных ...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Отключить вибрацию на клавиатуре Redmi Note 7 — 3 способа",
+    "slug": "kak-otklyuchit-vibratsiyu-na-klaviature-redmi-not-7",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Пошаговая инструкция, как убрать вибрацию при наборе текста на Redmi Note 7. Способы для стандартной и Gboard-клавиатуры...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как убрать звук клавиатуры на Lenovo: 5 рабочих способов",
+    "slug": "kak-otklyuchit-zvuk-klaviatury-na-planshete-lenovo",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Пошаговая инструкция по отключению звуков клавиатуры на планшетах Lenovo (Android, Windows). Разбираем настройки, систем...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как убрать звук клавиатуры на Xiaomi: пошаговая инструкция",
+    "slug": "kak-otklyuchit-zvuk-klaviatury-na-telefone-xiaomi",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Подробное руководство по отключению звуков клавиатуры на смартфонах Xiaomi (MIUI). Способы для Gboard, стандартной клави...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Как убрать звук клавиатуры на Texet: пошаговая инструкция",
+    "slug": "kak-otklyuchit-zvuk-klaviatury-v-telefone-texet",
+    "catSlug": "klaviatury-na-smartfonakh",
+    "desc": "Подробное руководство по отключению звуков клавиатуры на смартфонах Texet. Способы для Android и фирменной оболочки, реш...",
+    "cat": "Клавиатуры на смартфонах",
+    "icon": "📱"
+  },
+  {
+    "title": "Клавиатура не работает в GTA SA: 7 способов исправить (2026)",
+    "slug": "chto-delat-esli-ne-rabotaet-klaviatura-v-igre-sas-4",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Клавиши в GTA San Andreas не реагируют? Узнайте, как устранить проблему с управлением в игре: от проверки раскладки до п...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Клавиатура или джойстик: что удобнее для игр и работы в 2026 году",
+    "slug": "chto-udobnee-klaviatura-ili-dzhojstik",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Сравнение клавиатуры и джойстика по эргономике, точности, скорости реакции и адаптивности. Какой девайс выбрать для гейм...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Dark Souls 3: подсказки для клавиатуры — настройка и советы",
+    "slug": "dark-souls-3-kak-sdelat-podskazki-dlya-klaviatury",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Как настроить горячие клавиши в Dark Souls 3 для клавиатуры: подробное руководство с советами по оптимизации управления ...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Игры на джойстике и клавиатуре: совместимость и настройка 2026",
+    "slug": "igry-v-kotorye-mozhno-igrat-na-dzhojstike-i-klaviature",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Какие игры поддерживают одновременное управление клавиатурой и геймпадом? Инструкции по настройке, списки лучших проекто...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Фаталити в Mortal Kombat X на клавиатуре: все комбо 2026",
+    "slug": "kak-delat-fataliti-v-mortal-kombat-kh-na-klaviature",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Пошаговые инструкции, как выполнять фаталити в Mortal Kombat X на ПК с клавиатуры. Коды комбо для всех персонажей, совет...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Финты в PES 2017 на клавиатуре: полное руководство с клавишами",
+    "slug": "kak-delat-finty-v-pes-2017-na-klaviature",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Подробная инструкция по выполнению финтов в Pro Evolution Soccer 2017 с клавиатуры: схемы, комбинации, тренировка и сове...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Рывок в Hollow Knight на клавиатуре: как выполнять правильно",
+    "slug": "kak-delat-ryvok-v-hollow-knight-na-klaviature",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Пошаговая инструкция по выполнению рывка в Hollow Knight с клавиатуры: настройки, горячие клавиши и советы для новичков ...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Как правильно держать клавиатуру для игр: 7 ключевых правил 2026",
+    "slug": "kak-derzhat-klaviaturu-dlya-igr",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Эргономика игровой клавиатуры: как держать руки, чтобы избежать усталости и повысить точность в CS2, Dota 2, Fortnite. П...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Как играть на планшете через клавиатуру и мышь: пошаговая инструкция",
+    "slug": "kak-igrat-na-planshete-cherez-klaviaturu-i-mysh",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Подключите клавиатуру и мышь к планшету для комфортного гейминга: выбор адаптеров, настройка Android/iPadOS, совместимые...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Как играть в Капхед вдвоём на одной клавиатуре: гайд 2026",
+    "slug": "kak-igrat-v-kapkhed-vdvoem-na-odnom-kompyutere-na-odnoj-klaviature-bez-dzhojstika",
+    "catSlug": "igrovye-nastrojki",
+    "desc": "Пошаговая инструкция по настройке Cuphead для кооператива на 1 ПК без геймпада. Горячие клавиши, схемы управления и реше...",
+    "cat": "Игровые настройки",
+    "icon": "🎮"
+  },
+  {
+    "title": "Как изменить шрифт на клавиатуре планшета: пошаговая инструкция",
+    "slug": "kak-izmenit-shrift-na-klaviature-plansheta",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Подробное руководство по смене шрифта на виртуальной клавиатуре Android/iPad: от стандартных настроек до сторонних прило...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как изменить вид клавиатуры на iPad: 5 способов + инструкции",
+    "slug": "kak-izmenit-vid-klaviatury-na-ajpade",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Пошаговое руководство по смене раскладки, темы, языка и дизайна клавиатуры на iPad (iPadOS 15-17). Настройка виртуальной...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как переключить язык на английский на экранной клавиатуре: 5 способов",
+    "slug": "kak-na-ekrannoj-klaviature-pereklyuchit-yazyk-na-anglijskij",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Пошаговая инструкция по смене раскладки на английский на виртуальной клавиатуре Windows, Android и iOS. Горячие клавиши,...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Виртуальная клавиатура на Windows 7: как включить и настроить",
+    "slug": "kak-na-vindovs-7-sdelat-virtualnuyu-klaviaturu",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Пошаговая инструкция по активации экранной клавиатуры в Windows 7: стандартные методы, горячие клавиши и альтернативные ...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как убрать всплывающую клавиатуру в Windows 8: 5 способов",
+    "slug": "kak-otklyuchit-vsplyvayushchuyu-klaviaturu-v-windows-8",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Пошаговая инструкция по отключению сенсорной клавиатуры в Windows 8. Разбираем системные настройки, реестр и сторонние у...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как включить нумпад на экранной клавиатуре: 5 способов",
+    "slug": "kak-otkryt-numpad-v-ekrannoj-klaviature",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Пошаговая инструкция по активации цифровой панели (нумпада) на виртуальной клавиатуре Windows, Android и macOS. Рабочие ...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как установить клавиатуру на Apple Watch: пошаговая инструкция",
+    "slug": "kak-skachat-klaviaturu-na-eppl-votch",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Подробное руководство по скачиванию и настройке виртуальной клавиатуры на Apple Watch. Совместимость с watchOS 8+, спосо...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как включить экранную клавиатуру в Windows 7: 3 способа",
+    "slug": "kak-vklyuchit-interaktivnuyu-klaviaturu-windows-7",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Пошаговая инструкция по активации виртуальной клавиатуры в Windows 7 через Панель управления, командную строку и горячие...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как включить клавиатуру на планшете DEXP: пошаговая инструкция",
+    "slug": "kak-vklyuchit-klaviaturu-na-planshete-dexp",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Подробное руководство по активации экранной и физической клавиатуры на планшетах DEXP. Решение проблем с раскладкой, язы...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как включить клавиатуру на планшете Highway: пошаговая инструкция",
+    "slug": "kak-vklyuchit-klaviaturu-na-planshete-khajvej",
+    "catSlug": "virtualnaya-klaviatura",
+    "desc": "Не работает клавиатура на планшете Highway? Узнайте, как включить виртуальную или физическую клавиатуру через настройки ...",
+    "cat": "Виртуальная клавиатура",
+    "icon": "💻"
+  },
+  {
+    "title": "Как снять кнопки с клавиатуры: пошаговая инструкция 2026",
+    "slug": "kak-dostavat-knopki-ot-klaviatury",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Подробный гайд по демонтажу клавиш с механических, мембранных и ноутбучных клавиатур. Инструменты, техника безопасности ...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как оттереть корректор с клавиатуры: 10 проверенных способов",
+    "slug": "kak-otteret-korrektor-s-klaviatury",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Пошаговые инструкции, чем безопасно удалить корректор с клавиш ноутбука или механической клавиатуры без повреждений. Спи...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как почистить клавиатуру ZET Gaming Pro: пошаговая инструкция",
+    "slug": "kak-pochistit-klaviaturu-zet-gaming-pro",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Эффективные способы очистки игровой клавиатуры ZET Gaming Pro от пыли, грязи и залипших клавиш. Пошаговые инструкции, ср...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как почистить сенсорную клавиатуру: 5 безопасных способов",
+    "slug": "kak-pochistit-sensornuyu-klaviaturu",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Пошаговая инструкция по очистке сенсорной клавиатуры ноутбука/планшета от пыли, жира и грязи без риска повреждения. Сред...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как помыть клавиатуру ноутбука после пива: пошаговая инструкция",
+    "slug": "kak-pomyt-klaviaturu-noutbuka-posle-zalitiya-pivom",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Залили клавиатуру ноутбука пивом? Узнайте, как правильно очистить её без повреждений: от экстренных действий до глубокой...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как почистить клавиатуру от пыли и грязи — 5 безопасных способов",
+    "slug": "kak-pravilno-ochistit-klaviaturu",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Пошаговая инструкция по очистке клавиатуры ноутбука и ПК: механические, мембранные и игровые модели. Чем нельзя чистить,...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как правильно расположить мышку и клавиатуру на столе: эргономика 2026",
+    "slug": "kak-pravilno-raspolozhit-myshku-i-klaviaturu-na-stole",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Правильная расстановка клавиатуры и мыши на столе для здоровья и продуктивности: эргономичные расстояния, углы наклона, ...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как промыть клавиатуру не разбирая: 5 безопасных способов",
+    "slug": "kak-promyt-klaviaturu-ne-razbiraya",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Пошаговая инструкция по чистке клавиатуры без разборки: чем промывать, как сушить и какие ошибки избегать. Работает для ...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как правильно протереть клавиатуру: 5 безопасных способов",
+    "slug": "kak-proteret-klaviaturu",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Пошаговая инструкция по чистке клавиатуры без повреждений: влажные салфетки, спирт, сжатый воздух и другие методы. Подхо...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Как правильно смазывать свечи на клавиатуре: пошаговая инструкция",
+    "slug": "kak-smazyvat-svechi-na-klaviature",
+    "catSlug": "ukhod-i-chistka",
+    "desc": "Подробное руководство по смазке механических клавишных переключателей: выбор смазки, инструменты, техника нанесения и ош...",
+    "cat": "Уход и чистка",
+    "icon": "🧹"
+  },
+  {
+    "title": "Зачем нужна клавиатура: 7 ключевых функций в 2026 году",
+    "slug": "dlya-chego-nuzhna-klaviatura-kratko",
+    "catSlug": "drugoe",
+    "desc": "Клавиатура — не просто набор кнопок. Разбираем, для чего она нужна на ПК, смартфонах и игровых консолях, какие задачи ре...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как собрать полку для клавиатуры: пошаговая инструкция 2026",
+    "slug": "kak-sobrat-polku-dlya-klaviatury",
+    "catSlug": "drugoe",
+    "desc": "Детальное руководство по сборке полки для клавиатуры: выбор материалов, инструменты, крепление и настройка эргономики. С...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Клавиатура: какая информация передается при нажатии клавиш?",
+    "slug": "klaviatura-kakaya-informatsiya-eto",
+    "catSlug": "drugoe",
+    "desc": "Узнайте, какие данные фиксирует клавиатура при вводе: от кодов клавиш до потенциальных утечек данных. Разбор механики ра...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Плунжерная клавиатура: что это, принцип работы и отличия от мембранной",
+    "slug": "klaviatura-plunzhernogo-tipa-chto-eto",
+    "catSlug": "drugoe",
+    "desc": "Подробный разбор плунжерных клавиатур: устройство, преимущества перед мембранными, сферы применения и критерии выбора. Э...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Клавиатура — что это значит: определение, виды и устройство",
+    "slug": "chto-znachit-slovo-klaviatura",
+    "catSlug": "drugoe",
+    "desc": "Что такое клавиатура: разбираем значение термина, типы (механические, мембранные, виртуальные), устройство и принципы ра...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Бумажная клавиатура-антистресс: как сделать своими руками",
+    "slug": "kak-sdelat-klaviaturu-iz-bumagi-antistress",
+    "catSlug": "drugoe",
+    "desc": "Пошаговая инструкция по созданию тактильной клавиатуры из бумаги для снятия стресса. Материалы, схемы и советы по дизайн...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Механическая или мембранная клавиатура: что выбрать в 2026 году?",
+    "slug": "kakuyu-vybrat-klaviaturu-mekhanicheskuyu-ili-membrannuyu",
+    "catSlug": "drugoe",
+    "desc": "Сравнение механических и мембранных клавиатур: плюсы, минусы, критерии выбора для работы, игр и повседневного использова...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "10 идей: что сделать из старой клавиатуры от компьютера",
+    "slug": "chto-mozhno-sdelat-iz-klaviatury-ot-kompyutera",
+    "catSlug": "drugoe",
+    "desc": "Практические способы переработки клавиатуры: от поделок до ремонта. Идеи для творчества, быта и DIY-проектов с пошаговым...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Зачем нужна клавиатура? Объяснение для 5 класса по информатике",
+    "slug": "dlya-chego-nuzhna-klaviatura-5-klass-informatika",
+    "catSlug": "drugoe",
+    "desc": "Простое объяснение назначения клавиатуры для школьников 5 класса: устройство, функции, виды и примеры использования на у...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как научиться быстро печатать на клавиатуре: игры и тренажеры бесплатно",
+    "slug": "kak-nauchitsya-bystro-pechatat-na-klaviature-skachat-besplatno-igra",
+    "catSlug": "drugoe",
+    "desc": "Скачайте бесплатные игры и тренажеры для слепой печати на клавиатуре. Эффективные методы, упражнения и советы для быстро...",
+    "cat": "Другое",
+    "icon": "📁"
+  }
+]

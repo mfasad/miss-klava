@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⌨️</text></svg>">
+    <title>Как удалить клавиатуру у пользователя telebot: полное руководство — Мисс Клава</title>
+    <meta name="description" content="Пошаговая инструкция по удалению кнопок inline-клавиатуры в библиотеке telebot. Убираем навигацию и кнопки через bot.delete_message и edit_message_text для Python.">
+    <link rel="canonical" href="https://miss-klava.vercel.app/articles/k/ka/kak-udalit-klaviaturu-u-polzovatelya-telebot.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как удалить клавиатуру у пользователя telebot: полное руководство">
+    <meta property="og:description" content="Пошаговая инструкция по удалению кнопок inline-клавиатуры в библиотеке telebot. Убираем навигацию и кнопки через bot.delete_message и edit_message_text для Python.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780485530">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">⌨️</span>
+                <span class="pb-logo-text">Мисс Клава</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podklyuchenie-i-nastrojka/" class="pb-dropdown-item">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/" class="pb-dropdown-item">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/" class="pb-dropdown-item">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/" class="pb-dropdown-item">🔣 Спецсимволы и знаки</a>
+<a href="/category/podsvetka-i-dizajn/" class="pb-dropdown-item">🌈 Подсветка и дизайн</a>
+<a href="/category/remont-i-ustranenie-neispravnostej/" class="pb-dropdown-item">🛠️ Ремонт и устранение неисправностей</a>
+<a href="/category/klaviatury-na-smartfonakh/" class="pb-dropdown-item">📱 Клавиатуры на смартфонах</a>
+<a href="/category/igrovye-nastrojki/" class="pb-dropdown-item">🎮 Игровые настройки</a>
+<a href="/category/virtualnaya-klaviatura/" class="pb-dropdown-item">💻 Виртуальная клавиатура</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧹 Уход и чистка</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как удалить клавиатуру у пользователя telebot: полное руководство</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#как-быстро-убрать-кнопки-в-боте-на-python">Как быстро убрать кнопки в боте на Python</a></li><li><a href="#метод-редактирования-через-edit-message-text">Метод редактирования через edit_message_text</a></li><li><a href="#полное-удаление-сообщения-и-клавиатуры">Полное удаление сообщения и клавиатуры</a></li><li><a href="#работа-с-inline-и-reply-клавиатурами">Работа с Inline и Reply клавиатурами</a></li><li><a href="#использование-метода-edit-message-reply-markup">Использование метода edit_message_reply_markup</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#оптимизация-кода-и-управление-состоянием">Оптимизация кода и управление состоянием</a></li><li><a href="#faq-частые-вопросы-по-удалению-клавиатуры">FAQ: Частые вопросы по удалению клавиатуры</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-sdelat-klaviaturu-fortepiano-iz-kartona.html">Клавиатура фортепиано из картона: пошаговая инструкция</a></li><li><a href="/drugoe/g/gd/gde-kupit-klaviaturu-v-kirove.html">Где купить клавиатуру в Кирове: магазины, интернет-ресурсы и советы</a></li><li><a href="/drugoe/k/ka/kak-otklyuchit-zvuk-klaviatury-na-kompyutere-vindovs-10.html">Как отключить звук клавиатуры на Windows 10: полное руководство</a></li><li><a href="/drugoe/g/gd/gde-ispolzovat-staruyu-klaviaturu.html">10 креативных способов использования старой клавиатуры в 2026 году</a></li><li><a href="/drugoe/p/pa/pamyatnik-klaviature-iz-chego-sdelana.html">Памятник клавиатуре: из чего сделан и где находится — разбор материалов</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Удаление клавиатуры в телеграм-боте на Python (telebot)</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#как-быстро-убрать-кнопки-в-боте-на-python">Как быстро убрать кнопки в боте на Python</a></li><li><a href="#метод-редактирования-через-edit-message-text">Метод редактирования через edit_message_text</a></li><li><a href="#полное-удаление-сообщения-и-клавиатуры">Полное удаление сообщения и клавиатуры</a></li><li><a href="#работа-с-inline-и-reply-клавиатурами">Работа с Inline и Reply клавиатурами</a></li><li><a href="#использование-метода-edit-message-reply-markup">Использование метода edit_message_reply_markup</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#оптимизация-кода-и-управление-состоянием">Оптимизация кода и управление состоянием</a></li><li><a href="#faq-частые-вопросы-по-удалению-клавиатуры">FAQ: Частые вопросы по удалению клавиатуры</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="как-быстро-убрать-кнопки-в-боте-на-python">Как быстро убрать кнопки в боте на Python</h2>
+<p>Прямое удаление <code>InlineKeyboardMarkup</code> у конкретного пользователя невозможно без отправки нового сообщения или редактирования существующего, так как протокол Telegram не поддерживает команду «очистить клавиатуру» для предыдущего сообщения без визуального обновления чата. Чтобы убрать навигационные кнопки, необходимо отправить пустое сообщение или перерисовать текст с параметром <code>reply_markup=InlineKeyboardMarkup()</code> в пустом состоянии. Это фундаментальное ограничение API, которое требует от разработчика управления состоянием сообщений через их идентификаторы.</p>
+<p>Библиотека <em>telebot</em> (pyTelegramBotAPI) предоставляет инструменты для работы с интерфейсом, но логика удаления клавиатуры часто вызывает вопросы у новичков. Система не хранит «старую» клавиатуру отдельно от текста, она является частью объекта сообщения. Поэтому чтобы стереть кнопки, нужно либо удалить само сообщение целиком, либо заменить его содержимое на текст без кнопок. Выбор метода зависит от того, нужно ли пользователю видеть исторический контекст переписки.</p>
+
+<h2 id="метод-редактирования-через-edit-message-text">Метод редактирования через edit_message_text</h2>
+<p>Самый эффективный способ убрать кнопки, оставив текст сообщения, — это использование метода <code>bot.edit_message_text</code>. Этот подход позволяет динамически менять интерфейс сообщения, убирая навигацию, не создавая нового потока сообщений в истории чата. Вам нужно получить <code>message_id</code> и <code>chat_id</code> сообщения, которое содержит клавиатуру, и передать их в функцию редактирования.</p>
+<p>Ключевым моментом является передача пустого объекта клавиатуры или <code>None</code> в параметр <code>reply_markup</code>. Если вы передадите <code>reply_markup=InlineKeyboardMarkup()</code>, то система создаст сообщение с пустой панелью кнопок, фактически удалив их визуально. Это особенно полезно в сценариях меню, где пользователь выбирает пункт, и кнопки меняются или исчезают, показывая результат.</p>
+<p>Важно учитывать, что при редактировании сообщения <strong>chat_id</strong> и <strong>message_id</strong> должны совпадать с теми, что были при отправке оригинала. Ошибка в ID приведет к исключению, и клавиатура останется на месте. Также помните, что редактировать можно только свои сообщения, что является стандартным правилом безопасности Telegram API.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Неправильная передача параметров в <code>edit_message_text</code> часто приводит к ошибке 400 «Bad Request: message is not modified». Это происходит, если новый текст или клавиатура идентичны старым без изменений, или если аргументы переданы некорректно.</p>
+</blockquote>
+
+<p>Код реализации выглядит следующим образом: вы создаете пустую клавиатуру и передаете её в метод редактирования. Это мгновенно обновляет состояние сообщения для всех пользователей в чате. Такой метод предпочтителен для интерактивных меню, где кнопки служат только для перехода по этапам диалога.</p>
+
+<h2 id="полное-удаление-сообщения-и-клавиатуры">Полное удаление сообщения и клавиатуры</h2>
+<p>Если задача стоит удалить не только кнопки, но и само сообщение, в котором они находились, следует использовать метод <code>bot.delete_message</code>. Этот метод полностью стирает сообщение из истории чата, удаляя и текст, и встроенную клавиатуру. Это радикальный метод, который подходит для случаев, когда сообщение было временным (например, подтверждение действия), и его присутствие в истории нежелательно.</p>
+<p>Для вызова этой функции также требуются идентификаторы чата и сообщения. После успешного выполнения команда возвращает булевое значение <code>True</code>, подтверждая удаление. </p>
+
+<pre><code>bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)</code></pre>
+
+<p>Использование <strong>delete_message</strong> освобождает место в интерфейсе, но лишает пользователя возможности «откатить» действие, если сообщение было важным. В отличие от редактирования, этот метод не оставляет следов предыдущего состояния, что может быть неудобно, если пользователь случайно нажал не ту кнопку.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед удалением клавиатуры</h4><label class="check-item"><input type="checkbox"><span>Проверьте наличие message_id сообщения</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь в правах бота на редактирование</span></label><label class="check-item"><input type="checkbox"><span>Определите метод (редактирование или удаление)</span></label><label class="check-item"><input type="checkbox"><span>Проверьте тип клавиатуры (inline или reply)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="работа-с-inline-и-reply-клавиатурами">Работа с Inline и Reply клавиатурами</h2>
+<p>Различие между <code>InlineKeyboardMarkup</code> и <code>ReplyKeyboardMarkup</code> критично при выборе стратегии удаления. Inline-клавиатуры встраиваются в тело сообщения и могут быть удалены через <code>edit_message_text</code> или <code>edit_message_reply_markup</code>. Reply-клавиатуры (кнопки ниже поля ввода) управляются иначе: они заменяются или удаляются только при отправке нового сообщения с параметром <code>reply_markup=None</code> или пустой клавиатурой.</p>
+<p>Для удаления Reply-клавиатуры, которая «прилипает» к полю ввода пользователя, необходимо отправить любое сообщение (текстовое или даже пустое, если бот умеет), указав в качестве параметра <code>reply_markup</code> пустой объект. Это перезапишет текущую клавиатуру пользователя на стандартную. В библиотеке <em>telebot</em> это делается путем создания новой пустой клавиатуры и её передачи в метод <code>send_message</code>.</p>
+<p>Следующий код демонстрирует, как убрать стандартную клавиатуру, отправив сообщение без неё:</p>
+
+<pre><code>bot.send_message(chat_id, "Клавиатура удалена", reply_markup=None)</code></pre>
+
+<p>Важно отметить, что <code>ReplyKeyboardMarkup</code> часто используется для навигации по боту, и её удаление может дезориентировать пользователя, если не заменить её на альтернативную инструкцию или текст. Используйте <strong>reply_markup=None</strong> только тогда, когда пользователь завершил этап взаимодействия с кнопками.</p>
+
+<div class="pb-poll" id="poll-46a5ad97"><div class="pb-poll-question">📊 Какой метод удаления клавиатуры вы используете чаще?</div><div class="pb-poll-option" data-poll="46a5ad97" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">edit_message_text (редактирование)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="46a5ad97" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">delete_message (удаление сообщения)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="46a5ad97" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">send_message с None (замена)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="46a5ad97" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, не пробовал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="использование-метода-edit-message-reply-markup">Использование метода edit_message_reply_markup</h2>
+<p>Специализированный метод <code>bot.edit_message_reply_markup</code> позволяет менять только клавиатуру, не трогая текст сообщения. Это идеальный вариант, если у вас есть сообщение с описанием и кнопками, и вам нужно просто убрать кнопки, оставив текст нетронутым. Этот метод более эффективен с точки зрения трафика и производительности, чем полное редактирование текста.</p>
+<p>Параметры для этого метода аналогичны другим методам редактирования: <code>chat_id</code>, <code>message_id</code> и <code>reply_markup</code>. В качестве <code>reply_markup</code> можно передать пустой объект <code>InlineKeyboardMarkup</code>, что визуально уберет панель кнопок, но оставит сообщение в чате. Это часто используется в сценариях «завершения процесса», когда пользователь выполнил действие, и кнопки больше не нужны.</p>
+<p>Пример реализации:</p>
+
+<pre><code>bot.edit_message_reply_markup(chat_id=chat_id, message_id=msg_id, reply_markup=InlineKeyboardMarkup())</code></pre>
+
+<p>Этот подход минимизирует нагрузку на сервера Telegram, так как не пересылает текст сообщения заново, изменяя только его метаданные (клавиатуру). Это особенно важно при работе с большим количеством одновременных пользователей.</p>
+
+<details class="pb-accordion"><summary>Технические детали работы с API</summary><div class="pb-accordion-body"><p>При использовании edit_message_reply_markup убедитесь, что сообщение не является медиа-файлом без текста, так как в некоторых случаях требуется указание caption. Также обратите внимание на лимиты частоты запросов (rate limits), чтобы не получить блокировку API.</p></div></details>
+
+<h2 id="типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</h2>
+<p>Разработчики часто сталкиваются с ошибкой «Message can't be edited», когда пытаются удалить клавиатуру у сообщения, которое не было отправлено ботом. Бот может редактировать только те сообщения, которые он сам создал. Если сообщение было отправлено пользователем, удалить или изменить его клавиатуру невозможно, можно только удалить само сообщение, если у бота есть соответствующие права (в групповых чатах).</p>
+<p>Другая частая проблема — потеря <code>message_id</code>. Если вы отправляете сообщение в одном хендлере, а пытаетесь удалить клавиатуру в другом, вам нужно как-то сохранить ID этого сообщения (например, в базе данных или словаре памяти). Без правильного ID метод вернет ошибку. Также важно помнить про асинхронность: если вы используете потоки, убедитесь, что ID передан корректно.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Ошибка <code>400 Bad Request: message is not modified</code> возникает, если вы пытаетесь отправить ту же клавиатуру, которая уже установлена. Чтобы избежать этого, всегда передавайте новый объект клавиатуры, даже если он пустой.</p>
+</blockquote>
+
+<p>В таблице ниже приведены основные методы и их назначение для управления клавиатурами в <em>telebot</em>:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Назначение</th>
+<th>Влияние на текст</th>
+<th>Тип клавиатуры</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edit_message_text</code></td>
+<td>Изменение текста и клавиатуры</td>
+<td>Меняется или сохраняется</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td><code>edit_message_reply_markup</code></td>
+<td>Только изменение клавиатуры</td>
+<td>Не меняется</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td><code>delete_message</code></td>
+<td>Полное удаление сообщения</td>
+<td>Удаляется</td>
+<td>Любая</td>
+</tr>
+<tr>
+<td><code>send_message</code> с <code>None</code></td>
+<td>Замена Reply-клавиатуры</td>
+<td>Новое сообщение</td>
+<td>Reply</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Понимание различий между этими методами позволяет строить сложные сценарии взаимодействия с пользователем. Например, можно сначала удалить клавиатуру через <code>edit_message_reply_markup</code>, а затем, через секунду, удалить само сообщение через <code>delete_message</code>, создавая эффект анимации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для отладки кода используйте логирование всех исключений. Часто ошибка в удалении клавиатуры связана с тем, что бот не имеет прав на редактирование сообщения в конкретной группе или канале.</p></aside>
+
+<h2 id="оптимизация-кода-и-управление-состоянием">Оптимизация кода и управление состоянием</h2>
+<p>При разработке сложных ботов управление состоянием клавиатур требует аккуратности. Используйте машинное состояние (FSM) или внешние хранилища данных, чтобы отслеживать, какое сообщение с клавиатурой активно у конкретного пользователя. Это поможет избежать попыток удалить уже удаленные или несуществующие клавиатуры, что снижает нагрузку на обработку ошибок.</p>
+<p>Классическая архитектура предполагает, что удаление клавиатуры — это часть перехода в новое состояние. Например, после нажатия кнопки «Готово», бот должен обработать событие, убрать клавиатуру и отправить финальное сообщение. Реализация этого процесса через цепочку методов делает код чище и предсказуемее.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не забывайте обрабатывать исключения <code>TelegramError</code> при вызове методов удаления. Если сообщение уже было удалено пользователем или истекло время его жизни, бот может упасть с ошибкой, если вы не предусмотрели обработку этого случая.</p>
+</blockquote>
+
+<p>Оптимизация также включает в себя использование <code>pre</code> блоков для форматирования кода и четкое разделение логики. Разделяйте функции, отвечающие за отправку сообщений, и функции, отвечающие за их удаление. Это упрощает тестирование и поддержку кода в будущем.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный вывод: Удаление клавиатуры в telebot всегда требует взаимодействия с сообщением (редактирование или удаление), так как клавиатура не существует отдельно от сообщения в протоколе Telegram.</p></aside>
+
+<h2 id="faq-частые-вопросы-по-удалению-клавиатуры">FAQ: Частые вопросы по удалению клавиатуры</h2>
+
+<details>
+<summary>Можно ли удалить клавиатуру, не удаляя сообщение?</summary>
+<p>Да, это возможно двумя способами: используя метод <code>edit_message_text</code> с пустой клавиатурой или метод <code>edit_message_reply_markup</code>. Оба метода позволяют оставить текст сообщения, но убрать кнопки.</p>
+</details>
+
+<details>
+<summary>Как удалить клавиатуру, если я не знаю message_id?</summary>
+<p>Без <code>message_id</code> удалить или отредактировать конкретное сообщение невозможно. Вам необходимо сохранить ID сообщения (например, в базе данных или словаре) в момент его отправки, чтобы иметь возможность обратиться к нему позже.</p>
+</details>
+
+<details>
+<summary>Почему метод edit не удаляет Reply-клавиатуру?</summary>
+<p>Метод <code>edit_message_text</code> работает только с Inline-клавиатурами, встроенными в сообщение. Для удаления Reply-клавиатуры (кнопок под полем ввода) необходимо отправить новое сообщение с параметром <code>reply_markup=None</code>.</p>
+</details>
+
+<details>
+<summary>Можно ли удалить клавиатуру у другого пользователя?</summary>
+<p>Нет, бот может удалять или редактировать только свои собственные сообщения. Удалить сообщение пользователя, созданное им самим, бот не может, если только это не сообщение в группе, где у бота есть права администратора (и то, это будет удаление сообщения целиком, а не только клавиатуры).</p>
+</details>
+
+<details>
+<summary>Что лучше использовать: удаление или редактирование?</summary>
+<p>Выбор зависит от сценария. Если нужно сохранить историю диалога и просто убрать кнопки — используйте редактирование. Если сообщение было временным и его присутствие в истории не нужно — используйте полное удаление.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-sdelat-klaviaturu-fortepiano-iz-kartona.html" class="pb-related-card">
+                <span class="pb-related-title">Клавиатура фортепиано из картона: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как сделать реалистичную клавиатуру фортепиано из картона своими руками: шаблоны, материалы и секрет</span>
+            </a><a href="/drugoe/g/gd/gde-kupit-klaviaturu-v-kirove.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить клавиатуру в Кирове: магазины, интернет-ресурсы и советы</span>
+                <span class="pb-related-desc">Полный гид по поиску клавиатур в Кирове. Список проверенных сетей, игровых бутиков и онлайн-площадок</span>
+            </a><a href="/drugoe/k/ka/kak-otklyuchit-zvuk-klaviatury-na-kompyutere-vindovs-10.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить звук клавиатуры на Windows 10: полное руководство</span>
+                <span class="pb-related-desc">Пошаговая инструкция по отключению звуков ввода в Windows 10. Настройки системы, реестр и BIOS. Устр</span>
+            </a><a href="/drugoe/g/gd/gde-ispolzovat-staruyu-klaviaturu.html" class="pb-related-card">
+                <span class="pb-related-title">10 креативных способов использования старой клавиатуры в 2026 году</span>
+                <span class="pb-related-desc">Не спешите выбрасывать старую клавиатуру! Узнайте, как превратить её в макрос-панель, декор, органай</span>
+            </a><a href="/drugoe/p/pa/pamyatnik-klaviature-iz-chego-sdelana.html" class="pb-related-card">
+                <span class="pb-related-title">Памятник клавиатуре: из чего сделан и где находится — разбор материалов</span>
+                <span class="pb-related-desc">Подробный анализ материалов памятника клавиатуре в Екатеринбурге: металл, пластик, технологии изгото</span>
+            </a><a href="/drugoe/c/ch/chto-takoe-vzveshennaya-klaviatura-u-sintezatora.html" class="pb-related-card">
+                <span class="pb-related-title">Взвешенная клавиатура синтезатора: что это и зачем нужна</span>
+                <span class="pb-related-desc">Разбираемся, как работает взвешенная клавиатура у синтезаторов, её виды, преимущества и как выбрать </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">⌨️ Мисс Клава</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a> · <a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a> · <a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a> · <a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a> · <a href="/category/podsvetka-i-dizajn/">🌈 Подсветка и дизайн</a> · <a href="/category/remont-i-ustranenie-neispravnostej/">🛠️ Ремонт и устранение неисправностей</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мисс Клава. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

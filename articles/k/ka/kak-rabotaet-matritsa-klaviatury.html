@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⌨️</text></svg>">
+    <title>Как работает матрица клавиатуры: принцип действия и типы схем — Мисс Клава</title>
+    <meta name="description" content="Разбираем устройство матрицы клавиатуры, принцип сканирования строк и столбцов, отличия N-Key Rollover и Ghosting. Технический гид для энтузиастов.">
+    <link rel="canonical" href="https://miss-klava.vercel.app/articles/k/ka/kak-rabotaet-matritsa-klaviatury.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает матрица клавиатуры: принцип действия и типы схем">
+    <meta property="og:description" content="Разбираем устройство матрицы клавиатуры, принцип сканирования строк и столбцов, отличия N-Key Rollover и Ghosting. Технический гид для энтузиастов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780485530">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">⌨️</span>
+                <span class="pb-logo-text">Мисс Клава</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podklyuchenie-i-nastrojka/" class="pb-dropdown-item">🔌 Подключение и настройка</a>
+<a href="/category/raskladka-i-yazyki/" class="pb-dropdown-item">🌐 Раскладка и языки</a>
+<a href="/category/goryachie-klavishi/" class="pb-dropdown-item">⚡ Горячие клавиши</a>
+<a href="/category/spetssimvoly-i-znaki/" class="pb-dropdown-item">🔣 Спецсимволы и знаки</a>
+<a href="/category/podsvetka-i-dizajn/" class="pb-dropdown-item">🌈 Подсветка и дизайн</a>
+<a href="/category/remont-i-ustranenie-neispravnostej/" class="pb-dropdown-item">🛠️ Ремонт и устранение неисправностей</a>
+<a href="/category/klaviatury-na-smartfonakh/" class="pb-dropdown-item">📱 Клавиатуры на смартфонах</a>
+<a href="/category/igrovye-nastrojki/" class="pb-dropdown-item">🎮 Игровые настройки</a>
+<a href="/category/virtualnaya-klaviatura/" class="pb-dropdown-item">💻 Виртуальная клавиатура</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧹 Уход и чистка</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает матрица клавиатуры: принцип действия и типы схем</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-устройство-ввода">Введение в устройство ввода</a></li><li><a href="#основы-электрической-архитектуры">Основы электрической архитектуры</a></li><li><a href="#алгоритм-сканирования-и-обработка-сигналов">Алгоритм сканирования и обработка сигналов</a></li><li><a href="#проблема-ghosting-и-методы-борьбы">Проблема Ghosting и методы борьбы</a></li><li><a href="#технология-n-key-rollover-и-её-значение">Технология N-Key Rollover и её значение</a></li><li><a href="#сравнительный-анализ-типов-матриц">Сравнительный анализ типов матриц</a></li><li><a href="#сложные-схемы-и-радиопередача">Сложные схемы и радиопередача</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-vyglyadit-klaviatura-na-noutbuke.html">Внешний вид клавиатуры ноутбука: типы, раскладки и особенности</a></li><li><a href="/drugoe/k/kl/klaviatura-kak-na-noutbuke-dlya-pk-kupit.html">Клавиатура как на ноутбуке для ПК: как выбрать и купить идеальную модель</a></li><li><a href="/drugoe/k/ka/kak-pechatat-bystree-na-klaviature-trenazher.html">Тренажеры для быстрой печати на клавиатуре: лучшие методы 2026</a></li><li><a href="/drugoe/n/na/napishite-na-paskale-programmu-kotoraya-zaprashivaet-s-klaviatury-massiv-iz-n-chisel-a-zatem-vyvodit.html">Как написать на Паскале программу для ввода и вывода массива: пошаговое руководство</a></li><li><a href="/drugoe/c/ch/chuvak-bystro-stuchit-po-klaviature-otkuda-mem.html">Откуда мем «Чувак быстро стучит по клавиатуре»: история и смысл</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает матрица клавиатуры: полный технический обзор</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-устройство-ввода">Введение в устройство ввода</a></li><li><a href="#основы-электрической-архитектуры">Основы электрической архитектуры</a></li><li><a href="#алгоритм-сканирования-и-обработка-сигналов">Алгоритм сканирования и обработка сигналов</a></li><li><a href="#проблема-ghosting-и-методы-борьбы">Проблема Ghosting и методы борьбы</a></li><li><a href="#технология-n-key-rollover-и-её-значение">Технология N-Key Rollover и её значение</a></li><li><a href="#сравнительный-анализ-типов-матриц">Сравнительный анализ типов матриц</a></li><li><a href="#сложные-схемы-и-радиопередача">Сложные схемы и радиопередача</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-устройство-ввода">Введение в устройство ввода</h2>
+<p>Каждый раз, когда вы нажимаете любую клавишу, происходит сложнейший процесс, невидимый глазу, но фундаментально важный для работы компьютера. Внутри корпуса устройства находится <strong>печатная плата</strong>, на которой расположена <strong>матрица клавиатуры</strong>, состоящая из перекрещивающихся проводников. Это не просто набор кнопок, а изящная система электрических путей, позволяющая микроконтроллеру мгновенно определять нажатие даже десятков клавиш одновременно.</p>
+<p>Понимание того, как функционирует эта система, помогает глубже осознать различия между дешевыми офисными моделями и дорогими игровыми девайсами. Вы когда-нибудь задумывались, почему при одновременном нажатии некоторых комбинаций клавиш устройства просто перестают реагировать? Ответ кроется в физике работы <strong>сканирующей матрицы</strong> и ограничениях её архитектуры.</p>
+<p>Современные устройства используют различные методы маршрутизации сигналов, которые могут кардинально влиять на скорость отклика и надежность ввода. Разобравшись в основах, вы сможете лучше выбирать оборудование под свои задачи и даже устранять некоторые распространенные проблемы с клавиатурой своими силами.</p>
+
+<h2 id="основы-электрической-архитектуры">Основы электрической архитектуры</h2>
+<p>В основе любого устройства ввода лежит простая, но эффективная схема пересечения двух наборов проводников: строк и столбцов. Представьте себе сетку, где горизонтальные линии соединены с <strong>строками</strong>, а вертикальные — с <strong>столбцами</strong>. Каждая клавиша располагается в точке пересечения одной строки и одного столбца, выполняя роль электронного переключателя (спички), который замыкает цепь между ними.</p>
+<p>Микроконтроллер постоянно опрашивает эту сетку, подавая напряжение на строки по очереди и считывая состояние столбцов. Когда вы нажимаете клавишу, цепь замыкается, и сигнал поступает на <strong>вход микроконтроллера</strong>, который фиксирует координаты нажатия. Этот процесс происходит настолько быстро, что человеческий глаз воспринимает ввод как мгновенный, хотя технически это повторяющийся цикл опроса.</p>
+<p>Именно эта архитектура позволяет экономить количество проводов. Вместо того чтобы тянуть отдельный провод от каждой из сотен клавиш к плате, инженеры используют компактную схему, где количество проводов пропорционально сумме строк и столбцов, а не количеству кнопок. Это критически важно для миниатюризации устройств и снижения стоимости производства.</p>
+
+<h2 id="алгоритм-сканирования-и-обработка-сигналов">Алгоритм сканирования и обработка сигналов</h2>
+<p>Процесс сканирования матрицы — это непрерывный цикл, который выполняется тысячи раз в секунду. Контроллер активирует одну строку, проверяет все столбцы на наличие сигнала, затем переходит к следующей строке и так далее по кругу. Если нажатие произошло, контроллер запоминает координаты и передает их в операционную систему.</p>
+<p>Скорость этого сканирования определяет <strong>частоту опроса</strong>, которая напрямую влияет на задержку ввода. В высокопроизводительных устройствах эта частота может достигать 1000 Гц и выше, что минимизирует время между нажатием и реакцией на экране. Медленное сканирование может привести к ощущению"ленивого" набора текста или пропуску быстрых комбо в играх.</p>
+<p>Важно отметить, что микроконтроллер также выполняет функцию <strong>дебаунсинга</strong>, фильтруя ложные срабатывания. При механическом замыкании контактов происходит их вибрация, которая генерирует серию быстрых импульсов. Алгоритм программно игнорирует эти помехи, принимая решение о нажатии только после стабильного сигнала в течение определенного времени.</p>
+
+<div class="pb-poll" id="poll-c8ffa20a"><div class="pb-poll-question">📊 Какой тип переключателей вы используете чаще всего?</div><div class="pb-poll-option" data-poll="c8ffa20a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Механические</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c8ffa20a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Резиновые купола</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c8ffa20a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ножничные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c8ffa20a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Оптические</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="проблема-ghosting-и-методы-борьбы">Проблема Ghosting и методы борьбы</h2>
+<p>Одним из самых известных ограничений матричной схемы является эффект <strong>Ghosting</strong> (призрачное нажатие). Он возникает, когда вы нажимаете три и более клавиш, расположенных так, что их контакты образуют замкнутый контур. В этом случае контроллер не может однозначно определить, какие именно клавиши нажаты, и либо игнорирует последнее нажатие, либо генерирует случайный символ.</p>
+<p>Чтобы решить эту проблему, инженеры используют метод диодной защиты. Каждый переключатель в качественной клавиатуре оснащается отдельным <strong>диодом</strong>, который пропускает ток только в одном направлении. Это предотвращает обратный ток, который и вызывает ложные срабатывания, позволяя устройству корректно регистрировать сложнейшие комбинации.</p>
+<p>Отсутствие диодов типично для бюджетных моделей, где экономия на компонентах приводит к ограничениям в одновременном нажатии клавиш. Если вы играете в игры, требующие одновременного использования множества кнопок, отсутствие диодов может стать критическим фактором, блокирующим выполнение команд.</p>
+<blockquote>⚠️ Внимание: Даже если клавиатура заявлена как поддерживающая полное нажатие всех клавиш (N-Key Rollover), это не гарантирует отсутствие Ghosting в определенных комбинациях без установки диодов под каждым переключателем.</blockquote>
+
+<details class="pb-accordion"><summary>Техническая деталь про диоды</summary><div class="pb-accordion-body"><p>Диоды устанавливаются либо непосредственно под клавиатурой на плате, либо встроены в сам переключатель. В оптических клавиатурах роль диода часто выполняет физическая структура прерывания луча, что исключает необходимость в отдельных компонентах для каждой клавиши.</p></div></details>
+
+<h2 id="технология-n-key-rollover-и-её-значение">Технология N-Key Rollover и её значение</h2>
+<p>Термин <strong>N-Key Rollover (NKRO)</strong> означает способность клавиатуры обрабатывать одновременное нажатие любого количества клавиш (N). В идеальном мире это означает, что вы можете нажать все кнопки на клавиатуре одновременно, и компьютер зарегистрирует каждое нажатие. Это критически важно для профессиональных геймеров и музыкантов.</p>
+<p>Реализация NKRO требует не только наличия диодов, но и достаточной пропускной способности интерфейса связи. Старые интерфейсы, такие как PS/2, имели ограничения, тогда как современные USB-клавиатуры способны передавать данные о множестве нажатий в одном пакете. Однако даже USB имеет свои лимиты по количеству одновременных событий в одном пакете передачи.</p>
+<p>Многие производители указывают поддержку 6KRO (6-Key Rollover), что означает способность обрабатывать до 6 одновременных нажатий. Этого достаточно для большинства офисных задач, но может быть недостаточно для сложных эмуляторов управления или специфических игровых механик, где требуется нажатие более 6 клавиш.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка поддержки Rollover</h4><label class="check-item"><input type="checkbox"><span>Проверить спецификацию на сайте производителя</span></label><label class="check-item"><input type="checkbox"><span>Использовать онлайн-тест клавиатуры</span></label><label class="check-item"><input type="checkbox"><span>Нажать комбинацию WASD + Пробел + Shift</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в наличии USB 2.0 или выше</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="сравнительный-анализ-типов-матриц">Сравнительный анализ типов матриц</h2>
+<p>Разные типы переключателей и конструкций влияют на то, как именно строится матрица и как она взаимодействует с компьютером. Механические клавиатуры обычно имеют более сложную и надежную матрицу с диодами, в то время как мембранные модели часто экономят на компонентах, что приводит к эффектам Ghosting.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип клавиатуры</th>
+<th>Наличие диодов</th>
+<th>Поддержка Rollover</th>
+<th>Особенности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Механическая (Premium)</td>
+<td>Да (у всех)</td>
+<td>NKRO (Полная)</td>
+<td>Высокая надежность, быстрая реакция</td>
+</tr>
+<tr>
+<td>Механическая (Бюджет)</td>
+<td>Частично или нет</td>
+<td>2KRO - 6KRO</td>
+<td>Экономия, возможны задержки</td>
+</tr>
+<tr>
+<td>Мембранная</td>
+<td>Редко</td>
+<td>2KRO - 4KRO</td>
+<td>Тихая работа, но высокий Ghosting</td>
+</tr>
+<tr>
+<td>Оптическая</td>
+<td>Не требуется</td>
+<td>NKRO</td>
+<td>Мгновенная реакция, долгий ресурс</td>
+</tr>
+<tr>
+<td>Ножничная (Ноутбук)</td>
+<td>Нет</td>
+<td>2KRO - 3KRO</td>
+<td>Компактность, низкий ход</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Оптические клавиатуры представляют собой отдельный класс устройств, где вместо механического замыкания контактов используется прерывание светового луча. Это устраняет необходимость в физических диодах, так как свет не может течь в обратную сторону через линзу, что делает такие матрицы максимально быстрыми и долговечными.</p>
+<p>Ножничные клавиатуры, найденные в ноутбуках, часто имеют упрощенную схему сканирования для экономии места и энергии. В них матрица может быть разделена на несколько независимых блоков, что позволяет обрабатывать нажатия параллельно, но все же накладывает ограничения на количество одновременных событий.</p>
+<blockquote>⚠️ Внимание: Заявленная поддержка N-Key Rollover часто работает только при использовании конкретного порта USB или при отключении режима совместимости с legacy-системами.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для проверки реальной поддержки Rollover вашей клавиатуры используйте специализированные онлайн-тесты, которые позволяют нажимать до 10 клавиш одновременно и видеть, какие из них не регистрируются системой.</p></aside>
+
+<h2 id="сложные-схемы-и-радиопередача">Сложные схемы и радиопередача</h2>
+<p>Беспроводные клавиатуры сталкиваются с дополнительными сложностями при передаче данных матрицы. Радиоканл имеет ограниченную пропускную способность, что заставляет инженеров использовать более агрессивные алгоритмы сжатия пакетов. Это может приводить к тому, что даже при наличии полного NKRO на плате, беспроводной модуль не сможет передать все данные мгновенно.</p>
+<p>В современных беспроводных стандартах, таких как <strong>2.4 ГГц</strong> или Bluetooth 5.0, реализованы специальные режимы для игр, которые жертвуют энергоэффективностью ради уменьшения задержки. В этих режимах матрица сканируется с максимальной частотой, а данные передаются приоритетно, минуя стандартные очереди очереди.</p>
+<p>Интересно, что некоторыеные модели используют технологию разделения матрицы на несколько независимых зон, каждая из которых соединяется с отдельным микроконтроллером. Это позволяет обрабатывать нажатия в разных частях клавиатуры параллельно, снижая общую нагрузку на центральный процессор устройства.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Беспроводные клавиатуры с поддержкой частоты опроса 1000 Гц обеспечивают задержку, сравнимую с проводными моделями, но требуют стабильного радиоканала без помех от других устройств.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+<details>
+<summary>Что такое Ghosting и как его избежать?</summary>
+<p>Ghosting — это эффект, при котором клавиатура не может корректно распознать одновременное нажатие нескольких клавиш из-за особенностей электрической цепи. Чтобы избежать этого, используйте клавиатуры с диодной защитой под каждым переключателем и поддержкой N-Key Rollover.</p>
+</details>
+<details>
+<summary>Можно ли отремонтировать матрицу клавиатуры самостоятельно?</summary>
+<p>Да, если проблема в обрыве дорожки или сгоревшем диоде, опытный пользователь может восстановить работу, перепаяв компонент или замкнув дорожку проводом. Однако это требует навыков работы с паяльником и микроскопом.</p>
+</details>
+<details>
+<summary>Почему в некоторых клавиатурах не работают комбинации WASD + Пробел + Shift?</summary>
+<p>Это классический случай ограничения матрицы. В простых схемах эти клавиши находятся на одной линии пересечения, и при одновременном нажатии возникает конфликт сигналов. Решение — покупка клавиатуры с полной поддержкой Rollover.</p>
+</details>
+<details>
+<summary>Влияет ли тип подключения (USB/Bluetooth) на работу матрицы?</summary>
+<p>Да. Интерфейс USB обычно обеспечивает более высокую скорость передачи данных и низкую задержку по сравнению с Bluetooth. В Bluetooth могут быть задержки при передаче большого количества данных о нажатии клавиш.</p>
+</details>
+
+<blockquote>⚠️ Внимание: Технические характеристики клавиатур, включая поддержку Rollover и частоту опроса, могут меняться производителем между ревизиями одной и той же модели. Всегда проверяйте актуальную спецификацию перед покупкой.</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-vyglyadit-klaviatura-na-noutbuke.html" class="pb-related-card">
+                <span class="pb-related-title">Внешний вид клавиатуры ноутбука: типы, раскладки и особенности</span>
+                <span class="pb-related-desc">Подробный обзор того, как выглядит клавиатура на ноутбуке: от стандартных раскладок до игровых решен</span>
+            </a><a href="/drugoe/k/kl/klaviatura-kak-na-noutbuke-dlya-pk-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Клавиатура как на ноутбуке для ПК: как выбрать и купить идеальную модель</span>
+                <span class="pb-related-desc">Полный гид по выбору компактных клавиатур с низким ходом клавиш для ПК. Сравнение мембранных и механ</span>
+            </a><a href="/drugoe/k/ka/kak-pechatat-bystree-na-klaviature-trenazher.html" class="pb-related-card">
+                <span class="pb-related-title">Тренажеры для быстрой печати на клавиатуре: лучшие методы 2026</span>
+                <span class="pb-related-desc">Как научиться печатать быстрее с помощью тренажеров: топ-сервисы, упражнения и советы для слепого ме</span>
+            </a><a href="/drugoe/n/na/napishite-na-paskale-programmu-kotoraya-zaprashivaet-s-klaviatury-massiv-iz-n-chisel-a-zatem-vyvodit.html" class="pb-related-card">
+                <span class="pb-related-title">Как написать на Паскале программу для ввода и вывода массива: пошаговое руководство</span>
+                <span class="pb-related-desc">Полное руководство по созданию программы на Pascal: объявление массива, ввод n чисел с клавиатуры, ц</span>
+            </a><a href="/drugoe/c/ch/chuvak-bystro-stuchit-po-klaviature-otkuda-mem.html" class="pb-related-card">
+                <span class="pb-related-title">Откуда мем «Чувак быстро стучит по клавиатуре»: история и смысл</span>
+                <span class="pb-related-desc">История происхождения мема про человека, который быстро печатает. Основы, контекст, и почему это ста</span>
+            </a><a href="/drugoe/g/gd/gde-ispolzovat-staruyu-klaviaturu.html" class="pb-related-card">
+                <span class="pb-related-title">10 креативных способов использования старой клавиатуры в 2026 году</span>
+                <span class="pb-related-desc">Не спешите выбрасывать старую клавиатуру! Узнайте, как превратить её в макрос-панель, декор, органай</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">⌨️ Мисс Клава</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podklyuchenie-i-nastrojka/">🔌 Подключение и настройка</a> · <a href="/category/raskladka-i-yazyki/">🌐 Раскладка и языки</a> · <a href="/category/goryachie-klavishi/">⚡ Горячие клавиши</a> · <a href="/category/spetssimvoly-i-znaki/">🔣 Спецсимволы и знаки</a> · <a href="/category/podsvetka-i-dizajn/">🌈 Подсветка и дизайн</a> · <a href="/category/remont-i-ustranenie-neispravnostej/">🛠️ Ремонт и устранение неисправностей</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мисс Клава. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
